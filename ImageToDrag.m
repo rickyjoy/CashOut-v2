@@ -41,6 +41,17 @@
     //Set new center location
     self.center = newPoint;
     
+    //Updates with move (next 6 lines)
+    float x;
+    float y;
+    
+    x = newPoint.x;
+    y = newPoint.y;
+    
+    NSLog(@"x = %f", x);
+    NSLog(@"y = %f", y);
+
+    
 
 }
 - (id)initWithImage:(UIImage *)image

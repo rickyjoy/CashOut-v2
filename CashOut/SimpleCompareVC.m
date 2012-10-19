@@ -47,19 +47,42 @@
     CGRect recieve = CGRectMake(400, 0, 368, 658);
     
     //Create an instance of image to drag
-    ImageToDrag *img1 = [[ImageToDrag alloc] initWithImage:[UIImage imageNamed:@"penny.png"]];
-    img1.center = CGPointMake(110,75);
+    
+    //nickel 1
+    ImageToDrag *img1 = [[ImageToDrag alloc] initWithImage:[UIImage imageNamed:@"nickel.png"]];
+    img1.center = CGPointMake(500,400);
     img1.userInteractionEnabled = YES;
     [subview addSubview:img1];
     
-    // CGRect img1_col = CGRectMake(img1->x, img1->y, 100, 100);
-    
-    ImageToDrag *img2 = [[ImageToDrag alloc] initWithImage:[UIImage imageNamed:@"penny.png"]];
-    img2.center = CGPointMake(220,150);
+    //nickel 2
+    ImageToDrag *img2 = [[ImageToDrag alloc] initWithImage:[UIImage imageNamed:@"nickel.png"]];
+    img2.center = CGPointMake(500,450);
     img2.userInteractionEnabled = YES;
     [subview addSubview:img2];
     
+    //nickel 3
+    ImageToDrag *img3 = [[ImageToDrag alloc] initWithImage:[UIImage imageNamed:@"nickel.png"]];
+    img3.center = CGPointMake(500,450);
+    img3.userInteractionEnabled = YES;
+    [subview addSubview:img3];
     
+    //nickel 4
+    ImageToDrag *img4 = [[ImageToDrag alloc] initWithImage:[UIImage imageNamed:@"nickel.png"]];
+    img4.center = CGPointMake(500,450);
+    img4.userInteractionEnabled = YES;
+    [subview addSubview:img4];
+    
+    //nickel 5
+    ImageToDrag *img5 = [[ImageToDrag alloc] initWithImage:[UIImage imageNamed:@"nickel.png"]];
+    img5.center = CGPointMake(500,450);
+    img5.userInteractionEnabled = YES;
+    [subview addSubview:img5];
+    
+    //nickel 6
+    ImageToDrag *img6 = [[ImageToDrag alloc] initWithImage:[UIImage imageNamed:@"nickel.png"]];
+    img6.center = CGPointMake(500,450);
+    img6.userInteractionEnabled = YES;
+    [subview addSubview:img6];
     [self.view addSubview:subview];
 
     
@@ -70,12 +93,14 @@
     if (CGRectIntersectsRect(img1.frame, recieve)) {
         score++;
     }
-    else if(CGRectIntersectsRect(img2.frame, recieve)){
+    if(CGRectIntersectsRect(img2.frame, recieve)){
         score++;
     }
+    
     NSLog(@"score = %d", score);
 
 }
+
 
 
 - (void)didReceiveMemoryWarning
