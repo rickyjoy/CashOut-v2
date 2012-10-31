@@ -1,5 +1,5 @@
 //
-//  SimpleCompareVC.m
+//  SimpleCompareVC2.m
 //  CashOut
 //
 //  Created by Tyson Nickel on 2012-10-18.
@@ -7,10 +7,10 @@
 //
 // Simple Compare Level 1 - Compare a quarter to nickels! (1 quarter from 6 nickels)
 
-#import "SimpleCompareVC.h"
+#import "SimpleCompareVC2.h"
 #import "ImageToDrag.h"
 
-@interface SimpleCompareVC ()
+@interface SimpleCompareVC2 ()
 
 @end
 
@@ -26,13 +26,10 @@ UIImageView *LHS;
 ImageToDrag *img1;
 ImageToDrag *img2;
 ImageToDrag *img3;
-ImageToDrag *img4;
-ImageToDrag *img5;
-ImageToDrag *img6;
 
 
 
-@implementation SimpleCompareVC
+@implementation SimpleCompareVC2
 
 
 
@@ -41,7 +38,7 @@ ImageToDrag *img6;
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-
+        
         
         
     }
@@ -61,11 +58,11 @@ ImageToDrag *img6;
     // when coin is dropped into recieve zone, incremement tracker value to that coins value
     // if the tracker value exactly matches the 'required' value, (left side) then the player wins
     // -> push to winning screen, press some acknowledgement to return to level screen
-
+    
     //Image view for currency area
     LHS = [[UIImageView alloc] init];
-    [LHS setImage:[UIImage imageNamed:@"QuarterFront.png"]];
-    req_score = 25;
+    [LHS setImage:[UIImage imageNamed:@"DimeFront.png"]];
+    req_score = 10;
     
     //Size of currency view area
     [LHS setFrame:CGRectMake(175, 275, 135, 135)];
@@ -108,27 +105,10 @@ ImageToDrag *img6;
     img3.userInteractionEnabled = YES;
     [subview addSubview:img3];
     
-    //nickel 4
-    img4 = [[ImageToDrag alloc] initWithImage:[UIImage imageNamed:@"NickelFront.png"]];
-    img4.center = CGPointMake(416,740);
-    img4.userInteractionEnabled = YES;
-    [subview addSubview:img4];
-    
-    //nickel 5
-    img5 = [[ImageToDrag alloc] initWithImage:[UIImage imageNamed:@"NickelFront.png"]];
-    img5.center = CGPointMake(533,740);
-    img5.userInteractionEnabled = YES;
-    [subview addSubview:img5];
-    
-    //nickel 6
-    img6 = [[ImageToDrag alloc] initWithImage:[UIImage imageNamed:@"NickelFront.png"]];
-    img6.center = CGPointMake(650,740);
-    img6.userInteractionEnabled = YES;
-    [subview addSubview:img6];
     [self.view addSubview:subview];
-
-
-
+    
+    
+    
 }
 
 
@@ -155,15 +135,6 @@ ImageToDrag *img6;
     if(CGRectIntersectsRect(img3.frame, recieve)){
         score = score + 5;
     }
-    if(CGRectIntersectsRect(img4.frame, recieve)){
-        score = score + 5;
-    }
-    if(CGRectIntersectsRect(img5.frame, recieve)){
-        score = score + 5;
-    }
-    if(CGRectIntersectsRect(img6.frame, recieve)){
-        score = score + 5;
-    }
     
     NSLog(@"score = %d", score);
     
@@ -173,7 +144,7 @@ ImageToDrag *img6;
         score = 0;
         //Display "win" alert
         NSLog(@"Winner!");
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Correct!" message:@"Level 1 Complete!" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Correct!" message:@"Level 2 Complete!" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
         alert.tag = 100;
         [alert show];
         
@@ -181,7 +152,7 @@ ImageToDrag *img6;
             //Pop back to level screen
             [self.navigationController popViewControllerAnimated:YES];
         }
-
+        
     }
     //If incorrect, animate screen to red briefly.
     else if(score != req_score){

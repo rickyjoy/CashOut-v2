@@ -1,5 +1,5 @@
 //
-//  SimpleCompareVC.h
+//  SimpleCompareVC3.h
 //  CashOut
 //
 //  Created by Tyson Nickel on 2012-10-18.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SimpleCompareVC : UIViewController
+@interface SimpleCompareVC3 : UIViewController
 
 -(IBAction)go:(id)sender;
 

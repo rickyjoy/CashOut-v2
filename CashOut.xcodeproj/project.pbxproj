@@ -13,8 +13,6 @@
 		1D4D7868162E470800628BFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D4D7866162E470800628BFD /* InfoPlist.strings */; };
 		1D4D786A162E470800628BFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D7869162E470800628BFD /* main.m */; };
 		1D4D786E162E470800628BFD /* COTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D786D162E470800628BFD /* COTAppDelegate.m */; };
-		1D4D7870162E470800628BFD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D4D786F162E470800628BFD /* Default.png */; };
-		1D4D7872162E470800628BFD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D4D7871162E470800628BFD /* Default@2x.png */; };
 		1D4D7874162E470800628BFD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D4D7873162E470800628BFD /* Default-568h@2x.png */; };
 		1D4D787B162E473400628BFD /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4D787A162E473400628BFD /* Storyboard.storyboard */; };
 		1D4D787E162E497600628BFD /* COTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4D787D162E497600628BFD /* COTHomeViewController.m */; };
@@ -22,18 +20,38 @@
 		1D4D7885162E4A5200628BFD /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D4D7882162E4A5200628BFD /* back.png */; };
 		1D4D7886162E4A5200628BFD /* option.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D4D7883162E4A5200628BFD /* option.png */; };
 		1D4D7887162E4A5200628BFD /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D4D7884162E4A5200628BFD /* play.png */; };
-		2131F7F1162F96F200064842 /* simple_compare_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 2131F7F0162F96F200064842 /* simple_compare_background.png */; };
-		2131F7FA162F972800064842 /* dime.png in Resources */ = {isa = PBXBuildFile; fileRef = 2131F7F4162F972800064842 /* dime.png */; };
-		2131F7FB162F972800064842 /* loonie.png in Resources */ = {isa = PBXBuildFile; fileRef = 2131F7F5162F972800064842 /* loonie.png */; };
-		2131F7FC162F972800064842 /* nickel.png in Resources */ = {isa = PBXBuildFile; fileRef = 2131F7F6162F972800064842 /* nickel.png */; };
-		2131F7FD162F972800064842 /* penny.png in Resources */ = {isa = PBXBuildFile; fileRef = 2131F7F7162F972800064842 /* penny.png */; };
-		2131F7FE162F972800064842 /* quarter.png in Resources */ = {isa = PBXBuildFile; fileRef = 2131F7F8162F972800064842 /* quarter.png */; };
-		2131F7FF162F972800064842 /* toonie.png in Resources */ = {isa = PBXBuildFile; fileRef = 2131F7F9162F972800064842 /* toonie.png */; };
-		214A80CB1630852900C4C759 /* ImageToDrag.m in Sources */ = {isa = PBXBuildFile; fileRef = 214A80CA1630852900C4C759 /* ImageToDrag.m */; };
+		1D57C1F21635B84A00B42328 /* splash_fade.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D57C1F11635B84A00B42328 /* splash_fade.png */; };
+		1D57C1F41635B88800B42328 /* simple_compare_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D57C1F31635B88800B42328 /* simple_compare_background.png */; };
+		1D57C1F91635B98C00B42328 /* ImageToDrag.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D57C1F81635B98C00B42328 /* ImageToDrag.m */; };
 		214A80CE1630858400C4C759 /* SimpleCompareVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 214A80CD1630858400C4C759 /* SimpleCompareVC.m */; };
+		216AD8BE1634E8100083B92E /* DimeBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8A71634E8100083B92E /* DimeBack.png */; };
+		216AD8BF1634E8100083B92E /* DimeFront.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8A81634E8100083B92E /* DimeFront.png */; };
+		216AD8C01634E8100083B92E /* FiftyDollarBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8A91634E8100083B92E /* FiftyDollarBack.png */; };
+		216AD8C11634E8100083B92E /* FiftyDollarFront.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8AA1634E8100083B92E /* FiftyDollarFront.png */; };
+		216AD8C21634E8100083B92E /* FiveDollarBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8AB1634E8100083B92E /* FiveDollarBack.png */; };
+		216AD8C31634E8100083B92E /* FiveDollarFront.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8AC1634E8100083B92E /* FiveDollarFront.png */; };
+		216AD8C41634E8100083B92E /* HundredDollarBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8AD1634E8100083B92E /* HundredDollarBack.png */; };
+		216AD8C51634E8100083B92E /* HundredDollarFront.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8AE1634E8100083B92E /* HundredDollarFront.png */; };
+		216AD8C61634E8100083B92E /* MoneyViewerBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8AF1634E8100083B92E /* MoneyViewerBackground.png */; };
+		216AD8C71634E8100083B92E /* NickelBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8B01634E8100083B92E /* NickelBack.png */; };
+		216AD8C81634E8100083B92E /* NickelFront.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8B11634E8100083B92E /* NickelFront.png */; };
+		216AD8C91634E8100083B92E /* OneDollarBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8B21634E8100083B92E /* OneDollarBack.png */; };
+		216AD8CA1634E8100083B92E /* OneDollarFront.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8B31634E8100083B92E /* OneDollarFront.png */; };
+		216AD8CB1634E8100083B92E /* PennyBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8B41634E8100083B92E /* PennyBack.png */; };
+		216AD8CC1634E8100083B92E /* PennyFront.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8B51634E8100083B92E /* PennyFront.png */; };
+		216AD8CD1634E8100083B92E /* QuarterBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8B61634E8100083B92E /* QuarterBack.png */; };
+		216AD8CE1634E8100083B92E /* QuarterFront.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8B71634E8100083B92E /* QuarterFront.png */; };
+		216AD8CF1634E8100083B92E /* TenDollarBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8B81634E8100083B92E /* TenDollarBack.png */; };
+		216AD8D01634E8100083B92E /* TenDollarFront.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8B91634E8100083B92E /* TenDollarFront.png */; };
+		216AD8D11634E8100083B92E /* TwentyDollarBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8BA1634E8100083B92E /* TwentyDollarBack.png */; };
+		216AD8D21634E8100083B92E /* TwentyDollarFront.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8BB1634E8100083B92E /* TwentyDollarFront.png */; };
+		216AD8D31634E8100083B92E /* TwoDollarBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8BC1634E8100083B92E /* TwoDollarBack.png */; };
+		216AD8D41634E8100083B92E /* TwoDollarFront.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8BD1634E8100083B92E /* TwoDollarFront.png */; };
+		216AD8D81634E8FB0083B92E /* SimpleCompareVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 216AD8D71634E8FB0083B92E /* SimpleCompareVC2.m */; };
+		216AD8DB1634EDFA0083B92E /* SimpleCompareVC3.m in Sources */ = {isa = PBXBuildFile; fileRef = 216AD8DA1634EDFA0083B92E /* SimpleCompareVC3.m */; };
 		21ABDCA6162F904000F73DEA /* cashout_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 21ABDCA5162F904000F73DEA /* cashout_icon.png */; };
-		21ABDCAA162F935A00F73DEA /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 21ABDCA9162F935900F73DEA /* Default-Portrait~ipad.png */; };
-		21ABDCAC162F938200F73DEA /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 21ABDCAB162F938200F73DEA /* Default-Landscape~ipad.png */; };
+		FAB396001635045500107796 /* COTMoneyViewerController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB395FF1635045500107796 /* COTMoneyViewerController.m */; };
+		FAB3960E1635134200107796 /* MoneyEnlarge.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB3960D1635134200107796 /* MoneyEnlarge.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,20 +75,45 @@
 		1D4D7882162E4A5200628BFD /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		1D4D7883162E4A5200628BFD /* option.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = option.png; sourceTree = "<group>"; };
 		1D4D7884162E4A5200628BFD /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
-		2131F7F0162F96F200064842 /* simple_compare_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = simple_compare_background.png; path = ../../../Pictures/simple_compare_background.png; sourceTree = "<group>"; };
-		2131F7F4162F972800064842 /* dime.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dime.png; sourceTree = "<group>"; };
-		2131F7F5162F972800064842 /* loonie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loonie.png; sourceTree = "<group>"; };
-		2131F7F6162F972800064842 /* nickel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nickel.png; sourceTree = "<group>"; };
-		2131F7F7162F972800064842 /* penny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = penny.png; sourceTree = "<group>"; };
-		2131F7F8162F972800064842 /* quarter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quarter.png; sourceTree = "<group>"; };
-		2131F7F9162F972800064842 /* toonie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toonie.png; sourceTree = "<group>"; };
-		214A80C91630852900C4C759 /* ImageToDrag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageToDrag.h; path = ../ImageToDrag.h; sourceTree = "<group>"; };
-		214A80CA1630852900C4C759 /* ImageToDrag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageToDrag.m; path = ../ImageToDrag.m; sourceTree = "<group>"; };
+		1D57C1F11635B84A00B42328 /* splash_fade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash_fade.png; path = MoneyImages/splash_fade.png; sourceTree = "<group>"; };
+		1D57C1F31635B88800B42328 /* simple_compare_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = simple_compare_background.png; sourceTree = "<group>"; };
+		1D57C1F71635B98C00B42328 /* ImageToDrag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageToDrag.h; sourceTree = "<group>"; };
+		1D57C1F81635B98C00B42328 /* ImageToDrag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageToDrag.m; sourceTree = "<group>"; };
+		1D5E12BF1635F16E007F3BB5 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		1D5E12C11635F199007F3BB5 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
 		214A80CC1630858400C4C759 /* SimpleCompareVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleCompareVC.h; sourceTree = "<group>"; };
 		214A80CD1630858400C4C759 /* SimpleCompareVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleCompareVC.m; sourceTree = "<group>"; };
+		216AD8A71634E8100083B92E /* DimeBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DimeBack.png; sourceTree = "<group>"; };
+		216AD8A81634E8100083B92E /* DimeFront.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DimeFront.png; sourceTree = "<group>"; };
+		216AD8A91634E8100083B92E /* FiftyDollarBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FiftyDollarBack.png; sourceTree = "<group>"; };
+		216AD8AA1634E8100083B92E /* FiftyDollarFront.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FiftyDollarFront.png; sourceTree = "<group>"; };
+		216AD8AB1634E8100083B92E /* FiveDollarBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FiveDollarBack.png; sourceTree = "<group>"; };
+		216AD8AC1634E8100083B92E /* FiveDollarFront.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FiveDollarFront.png; sourceTree = "<group>"; };
+		216AD8AD1634E8100083B92E /* HundredDollarBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HundredDollarBack.png; sourceTree = "<group>"; };
+		216AD8AE1634E8100083B92E /* HundredDollarFront.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HundredDollarFront.png; sourceTree = "<group>"; };
+		216AD8AF1634E8100083B92E /* MoneyViewerBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MoneyViewerBackground.png; sourceTree = "<group>"; };
+		216AD8B01634E8100083B92E /* NickelBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NickelBack.png; sourceTree = "<group>"; };
+		216AD8B11634E8100083B92E /* NickelFront.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NickelFront.png; sourceTree = "<group>"; };
+		216AD8B21634E8100083B92E /* OneDollarBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OneDollarBack.png; sourceTree = "<group>"; };
+		216AD8B31634E8100083B92E /* OneDollarFront.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OneDollarFront.png; sourceTree = "<group>"; };
+		216AD8B41634E8100083B92E /* PennyBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PennyBack.png; sourceTree = "<group>"; };
+		216AD8B51634E8100083B92E /* PennyFront.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PennyFront.png; sourceTree = "<group>"; };
+		216AD8B61634E8100083B92E /* QuarterBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QuarterBack.png; sourceTree = "<group>"; };
+		216AD8B71634E8100083B92E /* QuarterFront.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QuarterFront.png; sourceTree = "<group>"; };
+		216AD8B81634E8100083B92E /* TenDollarBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TenDollarBack.png; sourceTree = "<group>"; };
+		216AD8B91634E8100083B92E /* TenDollarFront.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TenDollarFront.png; sourceTree = "<group>"; };
+		216AD8BA1634E8100083B92E /* TwentyDollarBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwentyDollarBack.png; sourceTree = "<group>"; };
+		216AD8BB1634E8100083B92E /* TwentyDollarFront.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwentyDollarFront.png; sourceTree = "<group>"; };
+		216AD8BC1634E8100083B92E /* TwoDollarBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwoDollarBack.png; sourceTree = "<group>"; };
+		216AD8BD1634E8100083B92E /* TwoDollarFront.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwoDollarFront.png; sourceTree = "<group>"; };
+		216AD8D61634E8FB0083B92E /* SimpleCompareVC2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleCompareVC2.h; sourceTree = "<group>"; };
+		216AD8D71634E8FB0083B92E /* SimpleCompareVC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleCompareVC2.m; sourceTree = "<group>"; };
+		216AD8D91634EDFA0083B92E /* SimpleCompareVC3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleCompareVC3.h; sourceTree = "<group>"; };
+		216AD8DA1634EDFA0083B92E /* SimpleCompareVC3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleCompareVC3.m; sourceTree = "<group>"; };
 		21ABDCA5162F904000F73DEA /* cashout_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cashout_icon.png; path = ../cashout_icon.png; sourceTree = "<group>"; };
-		21ABDCA9162F935900F73DEA /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait~ipad.png"; path = "../Default-Portrait~ipad.png"; sourceTree = "<group>"; };
-		21ABDCAB162F938200F73DEA /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "../Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		FAB395FE1635044E00107796 /* COTMoneyViewerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = COTMoneyViewerController.h; sourceTree = "<group>"; };
+		FAB395FF1635045500107796 /* COTMoneyViewerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COTMoneyViewerController.m; sourceTree = "<group>"; };
+		FAB3960D1635134200107796 /* MoneyEnlarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MoneyEnlarge.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +133,8 @@
 		1D4D784E162E470700628BFD = {
 			isa = PBXGroup;
 			children = (
+				1D5E12C11635F199007F3BB5 /* Default-Portrait@2x~ipad.png */,
+				1D5E12BF1635F16E007F3BB5 /* Default-Portrait~ipad.png */,
 				1D4D7863162E470800628BFD /* CashOut */,
 				1D4D785C162E470700628BFD /* Frameworks */,
 				1D4D785A162E470700628BFD /* Products */,
@@ -117,6 +162,7 @@
 		1D4D7863162E470800628BFD /* CashOut */ = {
 			isa = PBXGroup;
 			children = (
+				FAB395FC1635043200107796 /* MoneyViewer */,
 				1D4D787F162E4A3200628BFD /* imagin */,
 				1D4D786C162E470800628BFD /* COTAppDelegate.h */,
 				1D4D786D162E470800628BFD /* COTAppDelegate.m */,
@@ -125,8 +171,12 @@
 				1D4D787D162E497600628BFD /* COTHomeViewController.m */,
 				214A80CC1630858400C4C759 /* SimpleCompareVC.h */,
 				214A80CD1630858400C4C759 /* SimpleCompareVC.m */,
-				214A80C91630852900C4C759 /* ImageToDrag.h */,
-				214A80CA1630852900C4C759 /* ImageToDrag.m */,
+				216AD8D61634E8FB0083B92E /* SimpleCompareVC2.h */,
+				216AD8D71634E8FB0083B92E /* SimpleCompareVC2.m */,
+				216AD8D91634EDFA0083B92E /* SimpleCompareVC3.h */,
+				216AD8DA1634EDFA0083B92E /* SimpleCompareVC3.m */,
+				1D57C1F71635B98C00B42328 /* ImageToDrag.h */,
+				1D57C1F81635B98C00B42328 /* ImageToDrag.m */,
 				1D4D7864162E470800628BFD /* Supporting Files */,
 			);
 			path = CashOut;
@@ -149,11 +199,11 @@
 		1D4D787F162E4A3200628BFD /* imagin */ = {
 			isa = PBXGroup;
 			children = (
-				2131F7F3162F972800064842 /* Coins */,
-				2131F7F0162F96F200064842 /* simple_compare_background.png */,
-				21ABDCAB162F938200F73DEA /* Default-Landscape~ipad.png */,
-				21ABDCA9162F935900F73DEA /* Default-Portrait~ipad.png */,
+				216AD8A61634E8100083B92E /* MoneyImages */,
+				1D57C1F11635B84A00B42328 /* splash_fade.png */,
 				21ABDCA5162F904000F73DEA /* cashout_icon.png */,
+				1D57C1F31635B88800B42328 /* simple_compare_background.png */,
+				FAB3960D1635134200107796 /* MoneyEnlarge.png */,
 				1D4D7880162E4A4400628BFD /* logo.png */,
 				1D4D7882162E4A5200628BFD /* back.png */,
 				1D4D7883162E4A5200628BFD /* option.png */,
@@ -162,18 +212,43 @@
 			name = imagin;
 			sourceTree = "<group>";
 		};
-		2131F7F3162F972800064842 /* Coins */ = {
+		216AD8A61634E8100083B92E /* MoneyImages */ = {
 			isa = PBXGroup;
 			children = (
-				2131F7F4162F972800064842 /* dime.png */,
-				2131F7F5162F972800064842 /* loonie.png */,
-				2131F7F6162F972800064842 /* nickel.png */,
-				2131F7F7162F972800064842 /* penny.png */,
-				2131F7F8162F972800064842 /* quarter.png */,
-				2131F7F9162F972800064842 /* toonie.png */,
+				216AD8A71634E8100083B92E /* DimeBack.png */,
+				216AD8A81634E8100083B92E /* DimeFront.png */,
+				216AD8A91634E8100083B92E /* FiftyDollarBack.png */,
+				216AD8AA1634E8100083B92E /* FiftyDollarFront.png */,
+				216AD8AB1634E8100083B92E /* FiveDollarBack.png */,
+				216AD8AC1634E8100083B92E /* FiveDollarFront.png */,
+				216AD8AD1634E8100083B92E /* HundredDollarBack.png */,
+				216AD8AE1634E8100083B92E /* HundredDollarFront.png */,
+				216AD8AF1634E8100083B92E /* MoneyViewerBackground.png */,
+				216AD8B01634E8100083B92E /* NickelBack.png */,
+				216AD8B11634E8100083B92E /* NickelFront.png */,
+				216AD8B21634E8100083B92E /* OneDollarBack.png */,
+				216AD8B31634E8100083B92E /* OneDollarFront.png */,
+				216AD8B41634E8100083B92E /* PennyBack.png */,
+				216AD8B51634E8100083B92E /* PennyFront.png */,
+				216AD8B61634E8100083B92E /* QuarterBack.png */,
+				216AD8B71634E8100083B92E /* QuarterFront.png */,
+				216AD8B81634E8100083B92E /* TenDollarBack.png */,
+				216AD8B91634E8100083B92E /* TenDollarFront.png */,
+				216AD8BA1634E8100083B92E /* TwentyDollarBack.png */,
+				216AD8BB1634E8100083B92E /* TwentyDollarFront.png */,
+				216AD8BC1634E8100083B92E /* TwoDollarBack.png */,
+				216AD8BD1634E8100083B92E /* TwoDollarFront.png */,
 			);
-			name = Coins;
-			path = ../../../Pictures/Coins;
+			path = MoneyImages;
+			sourceTree = "<group>";
+		};
+		FAB395FC1635043200107796 /* MoneyViewer */ = {
+			isa = PBXGroup;
+			children = (
+				FAB395FE1635044E00107796 /* COTMoneyViewerController.h */,
+				FAB395FF1635045500107796 /* COTMoneyViewerController.m */,
+			);
+			path = MoneyViewer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +304,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D4D7868162E470800628BFD /* InfoPlist.strings in Resources */,
-				1D4D7870162E470800628BFD /* Default.png in Resources */,
-				1D4D7872162E470800628BFD /* Default@2x.png in Resources */,
 				1D4D7874162E470800628BFD /* Default-568h@2x.png in Resources */,
 				1D4D787B162E473400628BFD /* Storyboard.storyboard in Resources */,
 				1D4D7881162E4A4400628BFD /* logo.png in Resources */,
@@ -238,15 +311,32 @@
 				1D4D7886162E4A5200628BFD /* option.png in Resources */,
 				1D4D7887162E4A5200628BFD /* play.png in Resources */,
 				21ABDCA6162F904000F73DEA /* cashout_icon.png in Resources */,
-				21ABDCAA162F935A00F73DEA /* Default-Portrait~ipad.png in Resources */,
-				21ABDCAC162F938200F73DEA /* Default-Landscape~ipad.png in Resources */,
-				2131F7F1162F96F200064842 /* simple_compare_background.png in Resources */,
-				2131F7FA162F972800064842 /* dime.png in Resources */,
-				2131F7FB162F972800064842 /* loonie.png in Resources */,
-				2131F7FC162F972800064842 /* nickel.png in Resources */,
-				2131F7FD162F972800064842 /* penny.png in Resources */,
-				2131F7FE162F972800064842 /* quarter.png in Resources */,
-				2131F7FF162F972800064842 /* toonie.png in Resources */,
+				216AD8BE1634E8100083B92E /* DimeBack.png in Resources */,
+				216AD8BF1634E8100083B92E /* DimeFront.png in Resources */,
+				216AD8C01634E8100083B92E /* FiftyDollarBack.png in Resources */,
+				216AD8C11634E8100083B92E /* FiftyDollarFront.png in Resources */,
+				216AD8C21634E8100083B92E /* FiveDollarBack.png in Resources */,
+				216AD8C31634E8100083B92E /* FiveDollarFront.png in Resources */,
+				216AD8C41634E8100083B92E /* HundredDollarBack.png in Resources */,
+				216AD8C51634E8100083B92E /* HundredDollarFront.png in Resources */,
+				216AD8C61634E8100083B92E /* MoneyViewerBackground.png in Resources */,
+				216AD8C71634E8100083B92E /* NickelBack.png in Resources */,
+				216AD8C81634E8100083B92E /* NickelFront.png in Resources */,
+				216AD8C91634E8100083B92E /* OneDollarBack.png in Resources */,
+				216AD8CA1634E8100083B92E /* OneDollarFront.png in Resources */,
+				216AD8CB1634E8100083B92E /* PennyBack.png in Resources */,
+				216AD8CC1634E8100083B92E /* PennyFront.png in Resources */,
+				216AD8CD1634E8100083B92E /* QuarterBack.png in Resources */,
+				216AD8CE1634E8100083B92E /* QuarterFront.png in Resources */,
+				216AD8CF1634E8100083B92E /* TenDollarBack.png in Resources */,
+				216AD8D01634E8100083B92E /* TenDollarFront.png in Resources */,
+				216AD8D11634E8100083B92E /* TwentyDollarBack.png in Resources */,
+				216AD8D21634E8100083B92E /* TwentyDollarFront.png in Resources */,
+				216AD8D31634E8100083B92E /* TwoDollarBack.png in Resources */,
+				216AD8D41634E8100083B92E /* TwoDollarFront.png in Resources */,
+				FAB3960E1635134200107796 /* MoneyEnlarge.png in Resources */,
+				1D57C1F21635B84A00B42328 /* splash_fade.png in Resources */,
+				1D57C1F41635B88800B42328 /* simple_compare_background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,8 +350,11 @@
 				1D4D786A162E470800628BFD /* main.m in Sources */,
 				1D4D786E162E470800628BFD /* COTAppDelegate.m in Sources */,
 				1D4D787E162E497600628BFD /* COTHomeViewController.m in Sources */,
-				214A80CB1630852900C4C759 /* ImageToDrag.m in Sources */,
 				214A80CE1630858400C4C759 /* SimpleCompareVC.m in Sources */,
+				216AD8D81634E8FB0083B92E /* SimpleCompareVC2.m in Sources */,
+				216AD8DB1634EDFA0083B92E /* SimpleCompareVC3.m in Sources */,
+				FAB396001635045500107796 /* COTMoneyViewerController.m in Sources */,
+				1D57C1F91635B98C00B42328 /* ImageToDrag.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

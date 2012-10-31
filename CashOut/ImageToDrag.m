@@ -48,8 +48,7 @@
     x = newPoint.x;
     y = newPoint.y;
     
-    NSLog(@"x = %f", x);
-    NSLog(@"y = %f", y);
+    NSLog(@"(x,y) = (%f,%f)", x,y);
 
     
 
