@@ -5,7 +5,7 @@
 //  Created by Rick on 10/16/12.
 //  Copyright (c) 2012 Rick. All rights reserved.
 //
-
+//
 #import "COTHomeViewController.h"
 
 @interface COTHomeViewController ()
