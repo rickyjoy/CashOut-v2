@@ -97,13 +97,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="To be implemented. . ." borderStyle="roundedRect" minimumFontSize="17" id="qbG-nL-Gjh">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Please enter your teacher code" borderStyle="roundedRect" minimumFontSize="17" id="qbG-nL-Gjh">
                                 <rect key="frame" x="336" y="311" width="292" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="To be implemented. . ." borderStyle="roundedRect" minimumFontSize="17" id="BPS-Rt-j8V">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Please enter your password" borderStyle="roundedRect" minimumFontSize="17" id="BPS-Rt-j8V">
                                 <rect key="frame" x="336" y="392" width="292" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -543,10 +543,10 @@
             </objects>
             <point key="canvasLocation" x="290" y="2320"/>
         </scene>
-        <!--View Controller - Account Creation-->
+        <!--Register View - Account Creation-->
         <scene sceneID="20G-fk-eyW">
             <objects>
-                <viewController title="Account Creation" id="dWh-YV-wwy" sceneMemberID="viewController">
+                <viewController title="Account Creation" id="dWh-YV-wwy" customClass="COTRegisterView" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PU4-Eb-sQv">
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -576,19 +576,19 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="To be implemented. . ." borderStyle="roundedRect" minimumFontSize="17" id="nG5-gG-SbO">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Please enter your name" borderStyle="roundedRect" minimumFontSize="17" id="nG5-gG-SbO">
                                 <rect key="frame" x="363" y="304" width="269" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="To be implemented. . ." borderStyle="roundedRect" minimumFontSize="17" id="8Sx-7y-Fu1">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Please enter your password" borderStyle="roundedRect" minimumFontSize="17" id="8Sx-7y-Fu1">
                                 <rect key="frame" x="363" y="365" width="269" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="To be implemented. . ." borderStyle="roundedRect" minimumFontSize="17" id="KwD-xQ-p8k">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="please re-enter your pass word" borderStyle="roundedRect" minimumFontSize="17" id="KwD-xQ-p8k">
                                 <rect key="frame" x="363" y="423" width="269" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -598,18 +598,26 @@
                                 <rect key="frame" x="246" y="612" width="276" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Create">
+                                <state key="normal" title="Register">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="RegisterPressed:" destination="dWh-YV-wwy" eventType="touchUpInside" id="jc4-27-7DR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="gdB-Id-FST"/>
+                    <connections>
+                        <outlet property="TName" destination="nG5-gG-SbO" id="DZT-SR-jvt"/>
+                        <outlet property="TPassword" destination="8Sx-7y-Fu1" id="5by-cK-drA"/>
+                        <outlet property="TRepassword" destination="KwD-xQ-p8k" id="sOd-q8-slz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DkO-ch-anY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1436,6 +1444,119 @@
         <image name="play.png" width="150" height="150"/>
         <image name="simple_compare_background.png" width="768" height="1024"/>
     </resources>
+    <classes>
+        <class className="COTHomeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/COTHomeViewController.h"/>
+        </class>
+        <class className="COTMoneyViewerController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/COTMoneyViewerController.h"/>
+            <relationships>
+                <relationship kind="action" name="clickFiftyDollar"/>
+                <relationship kind="action" name="clickFiftyDollarBack"/>
+                <relationship kind="action" name="clickFiftyDollarFront"/>
+                <relationship kind="action" name="clickFiveCents"/>
+                <relationship kind="action" name="clickFiveCentsBack"/>
+                <relationship kind="action" name="clickFiveCentsFront"/>
+                <relationship kind="action" name="clickFiveDollar"/>
+                <relationship kind="action" name="clickFiveDollarBack"/>
+                <relationship kind="action" name="clickFiveDollarFront"/>
+                <relationship kind="action" name="clickHundredDollar"/>
+                <relationship kind="action" name="clickHundredDollarBack"/>
+                <relationship kind="action" name="clickHundredDollarFront"/>
+                <relationship kind="action" name="clickOneCent"/>
+                <relationship kind="action" name="clickOneCentBack"/>
+                <relationship kind="action" name="clickOneCentFront"/>
+                <relationship kind="action" name="clickOneDollar"/>
+                <relationship kind="action" name="clickOneDollarBack"/>
+                <relationship kind="action" name="clickOneDollarFront"/>
+                <relationship kind="action" name="clickTenCents"/>
+                <relationship kind="action" name="clickTenCentsBack"/>
+                <relationship kind="action" name="clickTenCentsFront"/>
+                <relationship kind="action" name="clickTenDollar"/>
+                <relationship kind="action" name="clickTenDollarBack"/>
+                <relationship kind="action" name="clickTenDollarFront"/>
+                <relationship kind="action" name="clickTwentyDollar"/>
+                <relationship kind="action" name="clickTwentyDollarBack"/>
+                <relationship kind="action" name="clickTwentyDollarFront"/>
+                <relationship kind="action" name="clickTwentyfiveCents"/>
+                <relationship kind="action" name="clickTwentyfiveCentsBack"/>
+                <relationship kind="action" name="clickTwentyfiveCentsFront"/>
+                <relationship kind="action" name="clickTwoDollar"/>
+                <relationship kind="action" name="clickTwoDollarBack"/>
+                <relationship kind="action" name="clickTwoDollarFront"/>
+                <relationship kind="action" name="outsideBottom"/>
+                <relationship kind="action" name="outsideLeft"/>
+                <relationship kind="action" name="outsideRight"/>
+                <relationship kind="action" name="outsideTop"/>
+                <relationship kind="outlet" name="clickDimeButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="clickFiftyButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="clickFiveButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="clickHundredButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="clickNickelButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="clickOneButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="clickPennyButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="clickQuarterButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="clickTenButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="clickTwentyButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="clickTwoButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="dimeBack" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="dimeFront" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="fiftyBack" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="fiftyFront" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="fiveBack" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="fiveFront" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="hundredBack" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="hundredFront" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="instructionText" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="moneyText" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="nickelBack" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="nickelFront" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="oneBack" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="oneFront" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="outsideBottomButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="outsideLeftButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="outsideRightButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="outsideTopButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="pennyBack" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="pennyFront" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="quarterBack" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="quarterFront" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="tenBack" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="tenFront" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="twentyBack" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="twentyFront" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="twoBack" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="twoFront" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="COTRegisterView" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/COTRegisterView.h"/>
+            <relationships>
+                <relationship kind="action" name="RegisterPressed:"/>
+                <relationship kind="outlet" name="TName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="TPassword" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="TRepassword" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="SimpleCompareVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SimpleCompareVC.h"/>
+            <relationships>
+                <relationship kind="action" name="go:"/>
+            </relationships>
+        </class>
+        <class className="SimpleCompareVC2" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SimpleCompareVC2.h"/>
+            <relationships>
+                <relationship kind="action" name="go:"/>
+            </relationships>
+        </class>
+        <class className="SimpleCompareVC3" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SimpleCompareVC3.h"/>
+            <relationships>
+                <relationship kind="action" name="go:"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

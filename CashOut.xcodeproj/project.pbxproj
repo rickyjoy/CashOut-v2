@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D01ABCD16447F2E00C4A903 /* COTRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D01ABCC16447F2E00C4A903 /* COTRegisterView.m */; };
 		1D4D785E162E470700628BFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D4D785D162E470700628BFD /* UIKit.framework */; };
 		1D4D7860162E470800628BFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D4D785F162E470700628BFD /* Foundation.framework */; };
 		1D4D7862162E470800628BFD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D4D7861162E470800628BFD /* CoreGraphics.framework */; };
@@ -55,6 +56,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D01ABCB16447F2E00C4A903 /* COTRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COTRegisterView.h; sourceTree = "<group>"; };
+		1D01ABCC16447F2E00C4A903 /* COTRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COTRegisterView.m; sourceTree = "<group>"; };
 		1D4D7859162E470700628BFD /* CashOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CashOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D4D785D162E470700628BFD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1D4D785F162E470700628BFD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -167,6 +170,8 @@
 				1D4D786C162E470800628BFD /* COTAppDelegate.h */,
 				1D4D786D162E470800628BFD /* COTAppDelegate.m */,
 				1D4D787A162E473400628BFD /* Storyboard.storyboard */,
+				1D01ABCB16447F2E00C4A903 /* COTRegisterView.h */,
+				1D01ABCC16447F2E00C4A903 /* COTRegisterView.m */,
 				1D4D787C162E497600628BFD /* COTHomeViewController.h */,
 				1D4D787D162E497600628BFD /* COTHomeViewController.m */,
 				214A80CC1630858400C4C759 /* SimpleCompareVC.h */,
@@ -355,6 +360,7 @@
 				216AD8DB1634EDFA0083B92E /* SimpleCompareVC3.m in Sources */,
 				FAB396001635045500107796 /* COTMoneyViewerController.m in Sources */,
 				1D57C1F91635B98C00B42328 /* ImageToDrag.m in Sources */,
+				1D01ABCD16447F2E00C4A903 /* COTRegisterView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
