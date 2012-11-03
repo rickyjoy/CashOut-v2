@@ -1,19 +1,18 @@
 //
-//  COTHomeViewController.m
+//  COTLoginView.m
 //  CashOut
 //
-//  Created by Rick on 10/16/12.
+//  Created by Rick on 11/3/12.
 //  Copyright (c) 2012 Rick. All rights reserved.
 //
-//
-#import "COTHomeViewController.h"
 
+#import "COTLoginView.h"
 
-@interface COTHomeViewController ()
+@interface COTLoginView ()
 
 @end
 
-@implementation COTHomeViewController
+@implementation COTLoginView
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -24,30 +23,16 @@
     return self;
 }
 
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [self.navigationController setNavigationBarHidden:YES animated:NO];
-    [super viewWillAppear:animated];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [self.navigationController setNavigationBarHidden:NO animated:NO];
-    [super viewWillDisappear:animated];
 }
 
 @end
