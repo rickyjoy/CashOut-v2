@@ -8,7 +8,6 @@
 
 #import "COTRegisterView.h"
 #import "Utility.h"
-#import "COTLoginView.h"
 
 
 @implementation COTRegisterView
@@ -18,15 +17,23 @@
 //database methods
 
 -(NSString *) filePath{
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentationDirectory, NSUserDomainMask, YES);
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDir = [paths objectAtIndex:0];
-    return [documentsDir stringByAppendingPathComponent:@"database.sql"];
+    return [documentsDir stringByAppendingPathComponent:@"data.sqlite3"];
 }
-
 -(void) openDB{
+    sqlite3 *db;
     if(sqlite3_open([[self filePath] UTF8String], &db) != SQLITE_OK){
         sqlite3_close(db);
         NSAssert(0,@"Database failed to open.");
+    }
+}
+-(void) createTableNamed:(NSString *)tableName withField1:(NSString *)field1 withField2:(NSString *)field2{
+    char *err;
+    NSString *sql = [NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS '%@' ('%@' TEXT PRIMARY KEY, '%@' TEXT);", tableName, field1, field2];
+    if (sqlite3_exec(database, [sql UTF8String], Nil, Nil, &err) != SQLITE_OK){
+        sqlite3_close(database);
+        NSAssert(0, @"Tabled failed to create.");
     }
 }
 
@@ -42,9 +49,8 @@
 
 - (void)viewDidLoad
 {
-    [self openDB];
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
@@ -77,6 +83,9 @@
         [alertView show];
         return;
     }
+    [self openDB];
+    [self createTableNamed:TName.text withField1:@"student names" withField2:@"success"];
+
 }
 - (void)viewDidUnload {
     [self setTName:nil];

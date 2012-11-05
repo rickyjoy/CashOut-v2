@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "sqlite3.h"
+#import <sqlite3.h>
 
 @interface COTLoginView : UIViewController{
     sqlite3 *db;
 }
+
+-(NSString *) filePath;
+-(void) openDB;
 
 @end
