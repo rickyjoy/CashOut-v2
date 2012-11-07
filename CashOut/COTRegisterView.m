@@ -22,44 +22,32 @@
     return [documentsDir stringByAppendingPathComponent:@"data.sqlite3"];
 }
 -(void) openDB{
-    sqlite3 *db;
     if(sqlite3_open([[self filePath] UTF8String], &db) != SQLITE_OK){
         sqlite3_close(db);
         NSAssert(0,@"Database failed to open.");
     }
 }
--(void) createTableNamed:(NSString *)tableName{
+-(void)createTableNamed:(NSString *)tableName{
     char *err;
-    NSString *sql = [NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS '%@' (name TEXT PRIMARY KEY, success TEXT);", tableName];
-    if (sqlite3_exec(database, [sql UTF8String], NULL, NULL, &err) != SQLITE_OK){
-        sqlite3_close(database);
+    NSString *sql_stmt = [NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS '%@' (name TEXT PRIMARY KEY, success NUMBER);", tableName];
+    if (sqlite3_exec(db, [sql_stmt UTF8String], NULL, NULL, &err) != SQLITE_OK){
+        sqlite3_close(db);
         NSAssert(0, @"Tabled failed to create.");
     }
 }
+/*
+-(BOOL)checkName:(NSString *)name{
+    char *err;
 
-
-- (id)initWithibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    NSString *sql = [NSString stringWithFormat:@"SELECT COUNT(*) FROM sqlite_master where type='table' and name='%@';",name];
+    const char *sql_stmt = [sql UTF8String];
+    if(sqlite3_exec(db, sql_stmt, NULL, NULL, &err) == 1){
+        return YES;
+    }else{
+        return NO;
     }
-    return self;
 }
-
-- (void)viewDidLoad
-{
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
+*/
 - (IBAction)RegisterPressed:(id)sender {
     if([TName.text length]<=0){
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Warning" message:@"Please enter your name" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
@@ -86,8 +74,33 @@
     }
     [self openDB];
     [self createTableNamed:TName.text];
-
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Congratulations" message:@"Your account has been created. Please back to Student Progress System and add your students. You can enter the SPS through the option button on the main screen." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    [alertView show];
+            
 }
+
+- (id)initWithibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+- (void)viewDidLoad
+{
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
 - (void)viewDidUnload {
     [self setTName:nil];
     [self setTPassword:nil];

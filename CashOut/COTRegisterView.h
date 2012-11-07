@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "COTLoginView.h"
+#import <sqlite3.h>
 
 
 @interface COTRegisterView : UIViewController{
-    sqlite3 *database;
+    sqlite3 *db;
 }
 
 @property (strong, nonatomic) IBOutlet UITextField *TName;
