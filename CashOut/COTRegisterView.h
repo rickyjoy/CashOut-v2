@@ -23,7 +23,7 @@
 
 -(NSString *) filePath;
 -(void) openDB;
--(void) createTableNamed:(NSString *) tableName withField1:(NSString *) field1 withField2:(NSString *) field2;
+-(void) createTableNamed:(NSString *) tableName;
 -(void) insertRecordIntoTableNamed:(NSString *) tableName withField1:(NSString *) field1 field1Value:(NSString *) field1Value withField2: (NSString *)field2 field2Value:(NSString *) field2Value;
 
 @end

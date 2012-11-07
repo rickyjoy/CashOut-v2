@@ -28,10 +28,10 @@
         NSAssert(0,@"Database failed to open.");
     }
 }
--(void) createTableNamed:(NSString *)tableName withField1:(NSString *)field1 withField2:(NSString *)field2{
+-(void) createTableNamed:(NSString *)tableName{
     char *err;
-    NSString *sql = [NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS '%@' ('%@' TEXT PRIMARY KEY, '%@' TEXT);", tableName, field1, field2];
-    if (sqlite3_exec(database, [sql UTF8String], Nil, Nil, &err) != SQLITE_OK){
+    NSString *sql = [NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS '%@' (name TEXT PRIMARY KEY, success TEXT);", tableName];
+    if (sqlite3_exec(database, [sql UTF8String], NULL, NULL, &err) != SQLITE_OK){
         sqlite3_close(database);
         NSAssert(0, @"Tabled failed to create.");
     }
@@ -49,6 +49,7 @@
 
 - (void)viewDidLoad
 {
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
@@ -84,7 +85,7 @@
         return;
     }
     [self openDB];
-    [self createTableNamed:TName.text withField1:@"student names" withField2:@"success"];
+    [self createTableNamed:TName.text];
 
 }
 - (void)viewDidUnload {

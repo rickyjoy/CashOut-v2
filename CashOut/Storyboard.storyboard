@@ -63,7 +63,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="kSx-XX-oHI"/>
                 </viewController>
@@ -109,12 +109,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1g0-Ry-87c">
-                                <rect key="frame" x="188" y="521" width="120" height="46"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1g0-Ry-87c">
+                                <rect key="frame" x="163" y="530" width="170" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Create">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Create" backgroundImage="button.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -124,24 +124,27 @@
                                     <segue destination="dWh-YV-wwy" kind="push" id="STR-7J-hi1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xnI-Lo-z9K">
-                                <rect key="frame" x="460" y="521" width="120" height="46"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xnI-Lo-z9K">
+                                <rect key="frame" x="435" y="530" width="170" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Login" backgroundImage="button.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="FK7-bl-nLH" kind="push" id="MAQ-0c-BDc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FoD-P1-a0E">
-                                <rect key="frame" x="230" y="670" width="309" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FoD-P1-a0E">
+                                <rect key="frame" x="230" y="660" width="309" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Free Play">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Free Play" backgroundImage="button.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -218,12 +221,12 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="utH-Bc-fqC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="utH-Bc-fqC">
                                 <rect key="frame" x="274" y="875" width="220" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Free Play">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Free Play" backgroundImage="button.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -250,11 +253,11 @@
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="w5g-Xk-ByP">
-                                <rect key="frame" x="20" y="20" width="200" height="201"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="w5g-Xk-ByP">
+                                <rect key="frame" x="55" y="411" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                <state key="normal" title="1">
+                                <state key="normal" title="1" backgroundImage="box.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -265,11 +268,11 @@
                                     <segue destination="tsS-Xh-JMH" kind="push" id="1ma-hD-j8T"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Wdy-qQ-ntF">
-                                <rect key="frame" x="20" y="246" width="200" height="201"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Wdy-qQ-ntF">
+                                <rect key="frame" x="594" y="411" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                <state key="normal" title="X">
+                                <state key="normal" title="4" backgroundImage="box.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -277,11 +280,11 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YnP-1X-0Oc">
-                                <rect key="frame" x="284" y="246" width="200" height="201"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YnP-1X-0Oc">
+                                <rect key="frame" x="55" y="578" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                <state key="normal" title="X">
+                                <state key="normal" title="5" backgroundImage="box.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -289,11 +292,11 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WYJ-N7-HgW">
-                                <rect key="frame" x="548" y="246" width="200" height="201"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WYJ-N7-HgW">
+                                <rect key="frame" x="232" y="578" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                <state key="normal" title="X">
+                                <state key="normal" title="6" backgroundImage="box.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -301,11 +304,11 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nqJ-fN-Ziq">
-                                <rect key="frame" x="20" y="474" width="200" height="201"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nqJ-fN-Ziq">
+                                <rect key="frame" x="415" y="578" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                <state key="normal" title="X">
+                                <state key="normal" title="7" backgroundImage="box.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -313,11 +316,11 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ifg-cu-WR0">
-                                <rect key="frame" x="284" y="474" width="200" height="201"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ifg-cu-WR0">
+                                <rect key="frame" x="594" y="578" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                <state key="normal" title="X">
+                                <state key="normal" title="8" backgroundImage="box.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -325,11 +328,11 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vre-29-te3">
-                                <rect key="frame" x="548" y="474" width="200" height="201"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vre-29-te3">
+                                <rect key="frame" x="55" y="735" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                <state key="normal" title="X">
+                                <state key="normal" title="9" backgroundImage="box.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -337,11 +340,11 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dHP-vt-w1E">
-                                <rect key="frame" x="20" y="704" width="200" height="201"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dHP-vt-w1E">
+                                <rect key="frame" x="232" y="735" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                <state key="normal" title="X">
+                                <state key="normal" title="10" backgroundImage="box.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -349,11 +352,11 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Y2S-Mx-BHN">
-                                <rect key="frame" x="284" y="704" width="200" height="201"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Y2S-Mx-BHN">
+                                <rect key="frame" x="415" y="735" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                <state key="normal" title="X">
+                                <state key="normal" title="11" backgroundImage="box.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -361,11 +364,11 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fC5-pL-wu6">
-                                <rect key="frame" x="548" y="704" width="200" height="201"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fC5-pL-wu6">
+                                <rect key="frame" x="594" y="735" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                <state key="normal" title="X">
+                                <state key="normal" title="12" backgroundImage="box.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -373,11 +376,11 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="K6p-vQ-tcu">
-                                <rect key="frame" x="284" y="20" width="200" height="201"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="K6p-vQ-tcu">
+                                <rect key="frame" x="232" y="411" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                <state key="normal" title="2">
+                                <state key="normal" title="2" backgroundImage="box.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -388,11 +391,11 @@
                                     <segue destination="g1R-07-ybG" kind="push" id="H22-1Y-Zr7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6Sk-nX-LPt">
-                                <rect key="frame" x="548" y="20" width="200" height="201"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6Sk-nX-LPt">
+                                <rect key="frame" x="415" y="411" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                <state key="normal" title="3">
+                                <state key="normal" title="3" backgroundImage="box.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -403,8 +406,19 @@
                                     <segue destination="Wem-eK-0IU" kind="push" id="NWP-HW-qtK"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="left" image="logo.png" id="msi-6V-spb">
+                                <rect key="frame" x="20" y="20" width="728" height="202"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Please Choose A Box to Start" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lJJ-Zr-dOy">
+                                <rect key="frame" x="201" y="296" width="366" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.2650469700107953" green="0.70694633152173914" blue="0.21394076658142694" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="rhI-qv-35Z"/>
                 </viewController>
@@ -595,12 +609,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SW4-dX-e9X">
-                                <rect key="frame" x="246" y="612" width="276" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SW4-dX-e9X">
+                                <rect key="frame" x="246" y="612" width="276" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Register">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Register" backgroundImage="button.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -636,12 +650,12 @@
                                 <rect key="frame" x="20" y="23" width="728" height="158"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eSM-jt-56i">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eSM-jt-56i">
                                 <rect key="frame" x="264" y="324" width="240" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Money View">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Money View" backgroundImage="button.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -651,12 +665,12 @@
                                     <segue destination="YFi-bL-HbS" kind="push" id="BqN-gx-KKE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OoU-GA-g8N">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="OoU-GA-g8N">
                                 <rect key="frame" x="264" y="410" width="240" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Basic Comparison">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Basic Comparison" backgroundImage="button.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -666,24 +680,24 @@
                                     <segue destination="fdP-hJ-hy1" kind="push" id="iho-2R-Oph"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jBd-o7-KHH">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jBd-o7-KHH">
                                 <rect key="frame" x="264" y="494" width="240" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Advanced Comparison">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Advanced Comparison" backgroundImage="button.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SOb-yP-IAT">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SOb-yP-IAT">
                                 <rect key="frame" x="264" y="579" width="240" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Store Challenge">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Store Challenge" backgroundImage="button.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -1440,133 +1454,19 @@
         <image name="TwentyDollarFront.png" width="203" height="95"/>
         <image name="TwoDollarBack.png" width="158" height="158"/>
         <image name="TwoDollarFront.png" width="158" height="158"/>
+        <image name="box.png" width="256" height="256"/>
+        <image name="button.png" width="170" height="60"/>
         <image name="logo.png" width="861" height="249"/>
         <image name="option.png" width="150" height="150"/>
         <image name="play.png" width="150" height="150"/>
         <image name="simple_compare_background.png" width="768" height="1024"/>
     </resources>
-    <classes>
-        <class className="COTHomeViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/COTHomeViewController.h"/>
-        </class>
-        <class className="COTLoginView" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/COTLoginView.h"/>
-        </class>
-        <class className="COTMoneyViewerController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/COTMoneyViewerController.h"/>
-            <relationships>
-                <relationship kind="action" name="clickFiftyDollar"/>
-                <relationship kind="action" name="clickFiftyDollarBack"/>
-                <relationship kind="action" name="clickFiftyDollarFront"/>
-                <relationship kind="action" name="clickFiveCents"/>
-                <relationship kind="action" name="clickFiveCentsBack"/>
-                <relationship kind="action" name="clickFiveCentsFront"/>
-                <relationship kind="action" name="clickFiveDollar"/>
-                <relationship kind="action" name="clickFiveDollarBack"/>
-                <relationship kind="action" name="clickFiveDollarFront"/>
-                <relationship kind="action" name="clickHundredDollar"/>
-                <relationship kind="action" name="clickHundredDollarBack"/>
-                <relationship kind="action" name="clickHundredDollarFront"/>
-                <relationship kind="action" name="clickOneCent"/>
-                <relationship kind="action" name="clickOneCentBack"/>
-                <relationship kind="action" name="clickOneCentFront"/>
-                <relationship kind="action" name="clickOneDollar"/>
-                <relationship kind="action" name="clickOneDollarBack"/>
-                <relationship kind="action" name="clickOneDollarFront"/>
-                <relationship kind="action" name="clickTenCents"/>
-                <relationship kind="action" name="clickTenCentsBack"/>
-                <relationship kind="action" name="clickTenCentsFront"/>
-                <relationship kind="action" name="clickTenDollar"/>
-                <relationship kind="action" name="clickTenDollarBack"/>
-                <relationship kind="action" name="clickTenDollarFront"/>
-                <relationship kind="action" name="clickTwentyDollar"/>
-                <relationship kind="action" name="clickTwentyDollarBack"/>
-                <relationship kind="action" name="clickTwentyDollarFront"/>
-                <relationship kind="action" name="clickTwentyfiveCents"/>
-                <relationship kind="action" name="clickTwentyfiveCentsBack"/>
-                <relationship kind="action" name="clickTwentyfiveCentsFront"/>
-                <relationship kind="action" name="clickTwoDollar"/>
-                <relationship kind="action" name="clickTwoDollarBack"/>
-                <relationship kind="action" name="clickTwoDollarFront"/>
-                <relationship kind="action" name="outsideBottom"/>
-                <relationship kind="action" name="outsideLeft"/>
-                <relationship kind="action" name="outsideRight"/>
-                <relationship kind="action" name="outsideTop"/>
-                <relationship kind="outlet" name="clickDimeButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="clickFiftyButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="clickFiveButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="clickHundredButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="clickNickelButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="clickOneButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="clickPennyButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="clickQuarterButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="clickTenButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="clickTwentyButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="clickTwoButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="dimeBack" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="dimeFront" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="fiftyBack" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="fiftyFront" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="fiveBack" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="fiveFront" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="hundredBack" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="hundredFront" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="instructionText" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="moneyText" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="nickelBack" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="nickelFront" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="oneBack" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="oneFront" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="outsideBottomButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="outsideLeftButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="outsideRightButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="outsideTopButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="pennyBack" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="pennyFront" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="quarterBack" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="quarterFront" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="tenBack" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="tenFront" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="twentyBack" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="twentyFront" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="twoBack" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="twoFront" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="COTRegisterView" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/COTRegisterView.h"/>
-            <relationships>
-                <relationship kind="action" name="RegisterPressed:"/>
-                <relationship kind="outlet" name="TName" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="TPassword" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="TRepassword" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="SimpleCompareVC" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SimpleCompareVC.h"/>
-            <relationships>
-                <relationship kind="action" name="go:"/>
-            </relationships>
-        </class>
-        <class className="SimpleCompareVC2" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SimpleCompareVC2.h"/>
-            <relationships>
-                <relationship kind="action" name="go:"/>
-            </relationships>
-        </class>
-        <class className="SimpleCompareVC3" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SimpleCompareVC3.h"/>
-            <relationships>
-                <relationship kind="action" name="go:"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Uuq-G0-cV5"/>
+        <segue reference="5b0-5N-oOl"/>
     </inferredMetricsTieBreakers>
 </document>

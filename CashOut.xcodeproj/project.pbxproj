@@ -26,6 +26,9 @@
 		1D57C1F91635B98C00B42328 /* ImageToDrag.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D57C1F81635B98C00B42328 /* ImageToDrag.m */; };
 		1DC137D316458A2700B26872 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC137D216458A2700B26872 /* Utility.m */; };
 		1DC137D916458E8D00B26872 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DC137D816458E8D00B26872 /* libsqlite3.dylib */; };
+		1DDE92E51648B32C00ECEE38 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DDE92E41648B32C00ECEE38 /* button.png */; };
+		1DDE92EE1648B66900ECEE38 /* box.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DDE92ED1648B66900ECEE38 /* box.png */; };
+		1DDE92F51648BEB700ECEE38 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DDE92F41648BEB700ECEE38 /* background.png */; };
 		214A80CE1630858400C4C759 /* SimpleCompareVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 214A80CD1630858400C4C759 /* SimpleCompareVC.m */; };
 		216AD8BE1634E8100083B92E /* DimeBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8A71634E8100083B92E /* DimeBack.png */; };
 		216AD8BF1634E8100083B92E /* DimeFront.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8A81634E8100083B92E /* DimeFront.png */; };
@@ -90,6 +93,9 @@
 		1DC137D116458A2700B26872 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
 		1DC137D216458A2700B26872 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
 		1DC137D816458E8D00B26872 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		1DDE92E41648B32C00ECEE38 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		1DDE92ED1648B66900ECEE38 /* box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box.png; sourceTree = "<group>"; };
+		1DDE92F41648BEB700ECEE38 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = ../background.png; sourceTree = "<group>"; };
 		214A80CC1630858400C4C759 /* SimpleCompareVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleCompareVC.h; sourceTree = "<group>"; };
 		214A80CD1630858400C4C759 /* SimpleCompareVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleCompareVC.m; sourceTree = "<group>"; };
 		216AD8A71634E8100083B92E /* DimeBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DimeBack.png; sourceTree = "<group>"; };
@@ -175,15 +181,15 @@
 			children = (
 				FAB395FC1635043200107796 /* MoneyViewer */,
 				1D4D787F162E4A3200628BFD /* imagin */,
-				1D4D787A162E473400628BFD /* Storyboard.storyboard */,
 				1D4D786C162E470800628BFD /* COTAppDelegate.h */,
 				1D4D786D162E470800628BFD /* COTAppDelegate.m */,
+				1D4D787A162E473400628BFD /* Storyboard.storyboard */,
+				1D4D787C162E497600628BFD /* COTHomeViewController.h */,
+				1D4D787D162E497600628BFD /* COTHomeViewController.m */,
 				1D03CF481645B5B5002DD7CD /* COTLoginView.h */,
 				1D03CF491645B5B5002DD7CD /* COTLoginView.m */,
 				1D01ABCB16447F2E00C4A903 /* COTRegisterView.h */,
 				1D01ABCC16447F2E00C4A903 /* COTRegisterView.m */,
-				1D4D787C162E497600628BFD /* COTHomeViewController.h */,
-				1D4D787D162E497600628BFD /* COTHomeViewController.m */,
 				214A80CC1630858400C4C759 /* SimpleCompareVC.h */,
 				214A80CD1630858400C4C759 /* SimpleCompareVC.m */,
 				216AD8D61634E8FB0083B92E /* SimpleCompareVC2.h */,
@@ -221,6 +227,9 @@
 				21ABDCA5162F904000F73DEA /* cashout_icon.png */,
 				1D57C1F31635B88800B42328 /* simple_compare_background.png */,
 				FAB3960D1635134200107796 /* MoneyEnlarge.png */,
+				1DDE92E41648B32C00ECEE38 /* button.png */,
+				1DDE92F41648BEB700ECEE38 /* background.png */,
+				1DDE92ED1648B66900ECEE38 /* box.png */,
 				1D4D7880162E4A4400628BFD /* logo.png */,
 				1D4D7883162E4A5200628BFD /* option.png */,
 				1D4D7884162E4A5200628BFD /* play.png */,
@@ -352,6 +361,9 @@
 				FAB3960E1635134200107796 /* MoneyEnlarge.png in Resources */,
 				1D57C1F21635B84A00B42328 /* splash_fade.png in Resources */,
 				1D57C1F41635B88800B42328 /* simple_compare_background.png in Resources */,
+				1DDE92E51648B32C00ECEE38 /* button.png in Resources */,
+				1DDE92EE1648B66900ECEE38 /* box.png in Resources */,
+				1DDE92F51648BEB700ECEE38 /* background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
