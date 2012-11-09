@@ -40,7 +40,7 @@
     [self openDB];
     sqlite3_stmt *statment;
 
-    NSString *insertSQL = [NSString stringWithFormat:@"INSERT INTO '%@' (name,success) VALUES ('%@')",TName.text, SName.text];
+    NSString *insertSQL = [NSString stringWithFormat:@"INSERT INTO '%@' (name,success) VALUES ('%@',0)",TName.text, SName.text];
     const char *insert_stmt = [insertSQL UTF8String];
     sqlite3_prepare_v2(db, insert_stmt, -1, &statment, NULL);
     if(sqlite3_step(statment)!=SQLITE_DONE){

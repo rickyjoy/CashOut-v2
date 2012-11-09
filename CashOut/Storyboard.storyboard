@@ -528,10 +528,10 @@
             </objects>
             <point key="canvasLocation" x="300" y="932"/>
         </scene>
-        <!--View Controller-->
+        <!--View-->
         <scene sceneID="C9h-7g-YJC">
             <objects>
-                <viewController id="2CK-0W-RdI" sceneMemberID="viewController">
+                <viewController id="2CK-0W-RdI" customClass="COTSRSView" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZKd-Td-Yjl">
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1552,139 +1552,6 @@
         <image name="play.png" width="150" height="150"/>
         <image name="simple_compare_background.png" width="768" height="1024"/>
     </resources>
-    <classes>
-        <class className="COTActivitiesChooseView" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/COTActivitiesChooseView.h"/>
-        </class>
-        <class className="COTAddStudentsView" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/COTAddStudentsView.h"/>
-            <relationships>
-                <relationship kind="action" name="buttonPressed:"/>
-                <relationship kind="outlet" name="SName" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="TName" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="COTHomeViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/COTHomeViewController.h"/>
-        </class>
-        <class className="COTLoginView" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/COTLoginView.h"/>
-        </class>
-        <class className="COTMoneyViewerController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/COTMoneyViewerController.h"/>
-            <relationships>
-                <relationship kind="action" name="clickFiftyDollar"/>
-                <relationship kind="action" name="clickFiftyDollarBack"/>
-                <relationship kind="action" name="clickFiftyDollarFront"/>
-                <relationship kind="action" name="clickFiveCents"/>
-                <relationship kind="action" name="clickFiveCentsBack"/>
-                <relationship kind="action" name="clickFiveCentsFront"/>
-                <relationship kind="action" name="clickFiveDollar"/>
-                <relationship kind="action" name="clickFiveDollarBack"/>
-                <relationship kind="action" name="clickFiveDollarFront"/>
-                <relationship kind="action" name="clickHundredDollar"/>
-                <relationship kind="action" name="clickHundredDollarBack"/>
-                <relationship kind="action" name="clickHundredDollarFront"/>
-                <relationship kind="action" name="clickOneCent"/>
-                <relationship kind="action" name="clickOneCentBack"/>
-                <relationship kind="action" name="clickOneCentFront"/>
-                <relationship kind="action" name="clickOneDollar"/>
-                <relationship kind="action" name="clickOneDollarBack"/>
-                <relationship kind="action" name="clickOneDollarFront"/>
-                <relationship kind="action" name="clickTenCents"/>
-                <relationship kind="action" name="clickTenCentsBack"/>
-                <relationship kind="action" name="clickTenCentsFront"/>
-                <relationship kind="action" name="clickTenDollar"/>
-                <relationship kind="action" name="clickTenDollarBack"/>
-                <relationship kind="action" name="clickTenDollarFront"/>
-                <relationship kind="action" name="clickTwentyDollar"/>
-                <relationship kind="action" name="clickTwentyDollarBack"/>
-                <relationship kind="action" name="clickTwentyDollarFront"/>
-                <relationship kind="action" name="clickTwentyfiveCents"/>
-                <relationship kind="action" name="clickTwentyfiveCentsBack"/>
-                <relationship kind="action" name="clickTwentyfiveCentsFront"/>
-                <relationship kind="action" name="clickTwoDollar"/>
-                <relationship kind="action" name="clickTwoDollarBack"/>
-                <relationship kind="action" name="clickTwoDollarFront"/>
-                <relationship kind="action" name="outsideBottom"/>
-                <relationship kind="action" name="outsideLeft"/>
-                <relationship kind="action" name="outsideRight"/>
-                <relationship kind="action" name="outsideTop"/>
-                <relationship kind="outlet" name="clickDimeButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="clickFiftyButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="clickFiveButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="clickHundredButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="clickNickelButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="clickOneButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="clickPennyButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="clickQuarterButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="clickTenButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="clickTwentyButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="clickTwoButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="dimeBack" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="dimeFront" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="fiftyBack" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="fiftyFront" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="fiveBack" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="fiveFront" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="hundredBack" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="hundredFront" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="instructionText" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="moneyText" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="nickelBack" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="nickelFront" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="oneBack" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="oneFront" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="outsideBottomButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="outsideLeftButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="outsideRightButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="outsideTopButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="pennyBack" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="pennyFront" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="quarterBack" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="quarterFront" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="tenBack" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="tenFront" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="twentyBack" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="twentyFront" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="twoBack" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="twoFront" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="COTOptionView" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/COTOptionView.h"/>
-        </class>
-        <class className="COTRegisterView" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/COTRegisterView.h"/>
-            <relationships>
-                <relationship kind="action" name="RegisterPressed:"/>
-                <relationship kind="outlet" name="TName" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="TPassword" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="TRepassword" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="COTbcLevelView" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/COTbcLevelView.h"/>
-        </class>
-        <class className="SimpleCompareVC" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SimpleCompareVC.h"/>
-            <relationships>
-                <relationship kind="action" name="go:"/>
-            </relationships>
-        </class>
-        <class className="SimpleCompareVC2" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SimpleCompareVC2.h"/>
-            <relationships>
-                <relationship kind="action" name="go:"/>
-            </relationships>
-        </class>
-        <class className="SimpleCompareVC3" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SimpleCompareVC3.h"/>
-            <relationships>
-                <relationship kind="action" name="go:"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

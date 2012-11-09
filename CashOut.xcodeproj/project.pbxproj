@@ -33,6 +33,7 @@
 		1DDE92E51648B32C00ECEE38 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DDE92E41648B32C00ECEE38 /* button.png */; };
 		1DDE92EE1648B66900ECEE38 /* box.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DDE92ED1648B66900ECEE38 /* box.png */; };
 		1DDE92F51648BEB700ECEE38 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DDE92F41648BEB700ECEE38 /* background.png */; };
+		1DE984A2164DCAA900B4FEFE /* COTSRSView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE984A1164DCAA900B4FEFE /* COTSRSView.m */; };
 		214A80CE1630858400C4C759 /* SimpleCompareVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 214A80CD1630858400C4C759 /* SimpleCompareVC.m */; };
 		216AD8BE1634E8100083B92E /* DimeBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8A71634E8100083B92E /* DimeBack.png */; };
 		216AD8BF1634E8100083B92E /* DimeFront.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8A81634E8100083B92E /* DimeFront.png */; };
@@ -108,6 +109,8 @@
 		1DDE92E41648B32C00ECEE38 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		1DDE92ED1648B66900ECEE38 /* box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box.png; sourceTree = "<group>"; };
 		1DDE92F41648BEB700ECEE38 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = ../background.png; sourceTree = "<group>"; };
+		1DE984A0164DCAA900B4FEFE /* COTSRSView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COTSRSView.h; sourceTree = "<group>"; };
+		1DE984A1164DCAA900B4FEFE /* COTSRSView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COTSRSView.m; sourceTree = "<group>"; };
 		214A80CC1630858400C4C759 /* SimpleCompareVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleCompareVC.h; sourceTree = "<group>"; };
 		214A80CD1630858400C4C759 /* SimpleCompareVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleCompareVC.m; sourceTree = "<group>"; };
 		216AD8A71634E8100083B92E /* DimeBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DimeBack.png; sourceTree = "<group>"; };
@@ -208,6 +211,8 @@
 				1D1A19B4164B28F90081FEEE /* COTbcLevelView.m */,
 				1D1A19B6164B29600081FEEE /* COTOptionView.h */,
 				1D1A19B7164B29600081FEEE /* COTOptionView.m */,
+				1DE984A0164DCAA900B4FEFE /* COTSRSView.h */,
+				1DE984A1164DCAA900B4FEFE /* COTSRSView.m */,
 				1DD864DC164A04CA00C74598 /* COTAddStudentsView.h */,
 				1DD864DD164A04CA00C74598 /* COTAddStudentsView.m */,
 				214A80CC1630858400C4C759 /* SimpleCompareVC.h */,
@@ -409,6 +414,7 @@
 				1D1A19AE164B282D0081FEEE /* COTActivitiesChooseView.m in Sources */,
 				1D1A19B5164B28F90081FEEE /* COTbcLevelView.m in Sources */,
 				1D1A19B8164B29600081FEEE /* COTOptionView.m in Sources */,
+				1DE984A2164DCAA900B4FEFE /* COTSRSView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
