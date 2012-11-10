@@ -15,6 +15,18 @@
 
 @implementation COTHomeViewController
 
+-(NSString *) filePath{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDir = [paths objectAtIndex:0];
+    return [documentsDir stringByAppendingPathComponent:@"data.sqlite3"];
+}
+-(void) openDB{
+    if(sqlite3_open([[self filePath] UTF8String], &db) != SQLITE_OK){
+        sqlite3_close(db);
+        NSAssert(0,@"Database failed to open.");
+    }
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -26,6 +38,14 @@
 
 - (void)viewDidLoad
 {
+    [self openDB];
+    char *err;
+    NSString *sql_stmt = [NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS teachers (name TEXT PRIMARY KEY, password TEXT);"];
+    if (sqlite3_exec(db, [sql_stmt UTF8String], NULL, NULL, &err) != SQLITE_OK){
+        sqlite3_close(db);
+        NSAssert(0, @"Tabled failed to create.");
+    }
+
     //UIImage *image = [UIImage imageNamed:@"background.png"];
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
     [super viewDidLoad];

@@ -27,19 +27,30 @@
         NSAssert(0,@"Database failed to open.");
     }
 }
+//create a table whose name is the teacher's name
+//this table will be used to record students' performance
 -(void)createTableNamed:(NSString *)tableName{
     char *err;
-    NSString *sql_stmt = [NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS '%@' (name TEXT PRIMARY KEY, success NUMBER);", tableName];
+    NSString *sql_stmt = [NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS '%@' (name TEXT PRIMARY KEY, success NUMBER, total NUMBER);", tableName];
     if (sqlite3_exec(db, [sql_stmt UTF8String], NULL, NULL, &err) != SQLITE_OK){
         sqlite3_close(db);
         NSAssert(0, @"Tabled failed to create.");
     }
 }
+//insert the teacher's name and password into the 'teachers' table in the database
+//these data will be used for the login function
+-(void)createTeacher:(NSString *)name Tpassword:(NSString *)password{
+    sqlite3_stmt *statment;
+    NSString *insertSQL = [NSString stringWithFormat:@"INSERT INTO teachers (name, password) VALUES ('%@', '%@')",name, password];
+    const char *insert_stmt = [insertSQL UTF8String];
+    sqlite3_prepare_v2(db, insert_stmt, -1, &statment, NULL);
+    sqlite3_step(statment);
+}
 /*
--(BOOL)checkName:(NSString *)name{
+-(bool)isNewAccount:(NSString *)tableName{
     char *err;
 
-    NSString *sql = [NSString stringWithFormat:@"SELECT COUNT(*) FROM sqlite_master where type='table' and name='%@';",name];
+    NSString *sql = [NSString stringWithFormat:@"SELECT COUNT(*) FROM sqlite_master where type='table' and name='%@';",tableName];
     const char *sql_stmt = [sql UTF8String];
     if(sqlite3_exec(db, sql_stmt, NULL, NULL, &err) == 1){
         return YES;
@@ -73,6 +84,7 @@
         return;
     }
     [self openDB];
+    [self createTeacher:TName.text Tpassword:TPassword.text];
     [self createTableNamed:TName.text];
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Congratulations" message:@"Your account has been created. Please back to Student Progress System and add your students. You can enter the SPS through the option button on the main screen." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
     [alertView show];

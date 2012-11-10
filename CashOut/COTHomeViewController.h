@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface COTHomeViewController : UIViewController
-
+#import <sqlite3.h>
+@interface COTHomeViewController : UIViewController{
+    sqlite3 *db;
+}
+-(NSString *) filePath;
+-(void) openDB;
 @end
