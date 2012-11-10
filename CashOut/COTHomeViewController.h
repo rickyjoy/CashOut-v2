@@ -7,10 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+<<<<<<< HEAD
 #import <sqlite3.h>
 @interface COTHomeViewController : UIViewController{
     sqlite3 *db;
 }
 -(NSString *) filePath;
 -(void) openDB;
+=======
+#import "FMDatabase.h"
+@interface COTHomeViewController : UIViewController
+
+
+-(NSString *) filePath;
+>>>>>>> finally
 @end

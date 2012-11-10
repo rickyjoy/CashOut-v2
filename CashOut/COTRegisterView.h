@@ -8,11 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <sqlite3.h>
+#import "FMDatabase.h"
 
-
-@interface COTRegisterView : UIViewController{
-    sqlite3 *db;
-}
+@interface COTRegisterView : UIViewController
 
 @property (strong, nonatomic) IBOutlet UITextField *TName;
 @property (strong, nonatomic) IBOutlet UITextField *TPassword;
@@ -22,9 +20,14 @@
 - (IBAction)RegisterPressed:(id)sender;
 
 -(NSString *) filePath;
+<<<<<<< HEAD
 -(void) openDB;
 -(void) createTableNamed:(NSString *) tableName;
 -(void) createTeacher:(NSString *)name Tpassword:(NSString *)password;
 //-(bool) isNewAccount:(NSString *)tableName;
 
+=======
+-(bool) isTableOK:(FMDatabase *)db
+    withTableName:(NSString *)tableName;
+>>>>>>> finally
 @end

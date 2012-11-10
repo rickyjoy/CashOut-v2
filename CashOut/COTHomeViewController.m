@@ -18,6 +18,7 @@
 -(NSString *) filePath{
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDir = [paths objectAtIndex:0];
+<<<<<<< HEAD
     return [documentsDir stringByAppendingPathComponent:@"data.sqlite3"];
 }
 -(void) openDB{
@@ -25,6 +26,9 @@
         sqlite3_close(db);
         NSAssert(0,@"Database failed to open.");
     }
+=======
+    return [documentsDir stringByAppendingPathComponent:@"data.db"];
+>>>>>>> finally
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -38,6 +42,7 @@
 
 - (void)viewDidLoad
 {
+<<<<<<< HEAD
     [self openDB];
     char *err;
     NSString *sql_stmt = [NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS teachers (name TEXT PRIMARY KEY, password TEXT);"];
@@ -46,6 +51,13 @@
         NSAssert(0, @"Tabled failed to create.");
     }
 
+=======
+    FMDatabase* db = [FMDatabase databaseWithPath:[self filePath]];
+    [db open];
+    NSString *sql = [NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS teachers (name TEXT PRIMARY KEY, password TEXT)"];
+    [db executeUpdate:sql];
+    [db close];
+>>>>>>> finally
     //UIImage *image = [UIImage imageNamed:@"background.png"];
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
     [super viewDidLoad];
