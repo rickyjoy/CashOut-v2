@@ -10,7 +10,7 @@
 
 
 
-@interface COTbcLevelView : UIViewController
+@interface COTacLevelView : UIViewController
 
 -(IBAction)selectLevel:(id)sender;
 

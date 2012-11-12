@@ -4,7 +4,7 @@
    version = "1.0">
    <FileBreakpoints>
       <FileBreakpoint
-         shouldBeEnabled = "Yes"
+         shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CashOut/COTRegisterView.h"
@@ -13,19 +13,19 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "25"
          endingLineNumber = "25"
-         landmarkName = "@interface COTRegisterView"
-         landmarkType = "2">
+         landmarkName = "-createTableNamed:"
+         landmarkType = "4">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CashOut/COTRegisterView.m"
-         timestampString = "374218833.733708"
+         timestampString = "374442142.346848"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "96"
-         endingLineNumber = "96"
+         startingLineNumber = "76"
+         endingLineNumber = "76"
          landmarkName = "-RegisterPressed:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -33,40 +33,25 @@
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "CashOut/COTRegisterView.m"
-         timestampString = "374218638.073631"
+         filePath = "CashOut/COTHomeViewController.m"
+         timestampString = "374441804.767003"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "58"
-         endingLineNumber = "58"
-         landmarkName = "-isTableOK:withTableName:"
-         landmarkType = "5">
+         startingLineNumber = "146"
+         endingLineNumber = "146"
+         landmarkName = "@implementation COTHomeViewController"
+         landmarkType = "3">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "CashOut/COTRegisterView.m"
-         timestampString = "374219644.515838"
+         filePath = "CashOut/FMResultSet.h"
+         timestampString = "374439096.02252"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "55"
-         endingLineNumber = "55"
-         landmarkName = "-isTableOK:withTableName:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "CashOut/COTRegisterView.m"
-         timestampString = "374219745.429665"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "54"
-         endingLineNumber = "54"
-         landmarkName = "-isTableOK:withTableName:"
-         landmarkType = "5">
+         startingLineNumber = "16"
+         endingLineNumber = "16">
       </FileBreakpoint>
    </FileBreakpoints>
    <ExceptionBreakpoints>

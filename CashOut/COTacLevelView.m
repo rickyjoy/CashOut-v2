@@ -1,18 +1,18 @@
 //
-//  COTbcLevelView.m
+//  COTacLevelView.m
 //  CashOut
 //
-//  Created by Rick on 11/7/12.
-//  Copyright (c) 2012 Rick. All rights reserved.
+//  Created by Tyson on 11/10/12.
+//  Copyright (c) 2012 Tyson. All rights reserved.
 //
 
-#import "COTbcLevelView.h"
+#import "COTacLevelView.h"
 
-@interface COTbcLevelView ()
+@interface COTacLevelView ()
 
 @end
 
-@implementation COTbcLevelView
+@implementation COTacLevelView
 
 -(void)selectLevel:(id)sender
 {
@@ -25,8 +25,8 @@
     NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
     [f setNumberStyle:NSNumberFormatterDecimalStyle];
     NSNumber * myNumber = [f numberFromString:title];
-
-    [standardUserDefaults setObject:myNumber forKey:@"bclevel"];
+    
+    [standardUserDefaults setObject:myNumber forKey:@"aclevel"];
     [standardUserDefaults synchronize];
     
 }

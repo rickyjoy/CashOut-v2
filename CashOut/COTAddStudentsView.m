@@ -27,14 +27,7 @@
         NSAssert(0,@"Database failed to open.");
     }
 }
--(void)createTableNamed:(NSString *)tableName{
-    char *err;
-    NSString *sql_stmt = [NSString stringWithFormat:@"CREATE TABLE IF NOT EXISTS '%@' (name TEXT PRIMARY KEY, success NUMBER);", tableName];
-    if (sqlite3_exec(db, [sql_stmt UTF8String], NULL, NULL, &err) != SQLITE_OK){
-        sqlite3_close(db);
-        NSAssert(0, @"Tabled failed to create.");
-    }
-}
+
 
 - (IBAction)buttonPressed:(id)sender {
     [self openDB];

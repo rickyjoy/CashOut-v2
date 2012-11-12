@@ -1,18 +1,18 @@
 //
-//  COTOptionView.m
+//  COTALoggedInPLayView.m
 //  CashOut
 //
 //  Created by Rick on 11/7/12.
 //  Copyright (c) 2012 Rick. All rights reserved.
 //
 
-#import "COTOptionView.h"
+#import "COTALoggedInPLayView.h"
 
-@interface COTOptionView ()
+@interface COTALoggedInPLayView ()
 
 @end
 
-@implementation COTOptionView
+@implementation COTALoggedInPLayView
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -22,6 +22,7 @@
     }
     return self;
 }
+
 -(NSString *) filePath{
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDir = [paths objectAtIndex:0];
@@ -35,6 +36,10 @@
         NSAssert(0,@"Database failed to open.");
     }
 }
+
+//a founction
+//return TRUE if a teacher is logged
+//return FALSE if none logged
 -(Boolean) isLogged
 {
     [self openDB];//to open the database
@@ -115,22 +120,15 @@
     sqlite3_close(db);
     
 }
+
 - (void)viewDidLoad
 {
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
+    //if not user loggout, we suppose do let them act as log gin
     if([self isLogged])
     {
-        logoutButton.enabled = TRUE;
-        logoutButton.alpha = 1;
-        SPSButton.enabled = TRUE;
-        SPSButton.alpha = 1;
-    }
-    else
-    {
-        logoutButton.enabled = FALSE;
-        logoutButton.alpha = 0;
-        SPSButton.enabled = FALSE;
-        SPSButton.alpha = 0;
+        NSLog(@"ENTER TEACHER SELECT AND LOGGED");
+        teacherNameDisplay.text = [self whoIsLogged];
     }
 
     [super viewDidLoad];
@@ -141,13 +139,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-- (IBAction)logoutAction:(id)sender
-{
-    [self logoutCurrentTeacher:[self whoIsLogged]];
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Log out" message:@"Your account has successfully logged out." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-    [alertView show];
-    [self viewDidLoad];//reload the screen to update the statue
 }
 
 @end

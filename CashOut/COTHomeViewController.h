@@ -7,18 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-<<<<<<< HEAD
+#import "FMDatabase.h"
 #import <sqlite3.h>
 @interface COTHomeViewController : UIViewController{
     sqlite3 *db;
 }
+
 -(NSString *) filePath;
 -(void) openDB;
-=======
-#import "FMDatabase.h"
-@interface COTHomeViewController : UIViewController
+-(void) createDBStructureIfNotExist;
+-(Boolean) isLogged;
+- (IBAction)enterButton:(id)sender;//the button to enter the CashOut
 
 
--(NSString *) filePath;
->>>>>>> finally
 @end

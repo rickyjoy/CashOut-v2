@@ -20,14 +20,13 @@
 - (IBAction)RegisterPressed:(id)sender;
 
 -(NSString *) filePath;
-<<<<<<< HEAD
+
 -(void) openDB;
 -(void) createTableNamed:(NSString *) tableName;
 -(void) createTeacher:(NSString *)name Tpassword:(NSString *)password;
 //-(bool) isNewAccount:(NSString *)tableName;
 
-=======
 -(bool) isTableOK:(FMDatabase *)db
     withTableName:(NSString *)tableName;
->>>>>>> finally
+
 @end

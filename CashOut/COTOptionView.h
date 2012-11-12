@@ -7,7 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <sqlite3.h>
+@interface COTOptionView : UIViewController{
+    IBOutlet UIButton *logoutButton;
+    IBOutlet UIButton *SPSButton;
+    sqlite3 *db;
+}
 
-@interface COTOptionView : UIViewController
+
+- (IBAction)logoutAction:(id)sender;
+- (IBAction)SPSAction:(id)sender;
+-(NSString *) filePath;
+-(void) openDB;
+-(Boolean) isLogged;
+-(NSString *) whoIsLogged;
+-(void) logoutCurrentTeacher:(NSString *) currentTeacherName;
 
 @end

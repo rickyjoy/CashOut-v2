@@ -10,7 +10,6 @@
 		1D01ABCD16447F2E00C4A903 /* COTRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D01ABCC16447F2E00C4A903 /* COTRegisterView.m */; };
 		1D03CF4A1645B5B5002DD7CD /* COTLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D03CF491645B5B5002DD7CD /* COTLoginView.m */; };
 		1D1A19AE164B282D0081FEEE /* COTActivitiesChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D1A19AD164B282D0081FEEE /* COTActivitiesChooseView.m */; };
-		1D1A19B5164B28F90081FEEE /* COTbcLevelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D1A19B4164B28F90081FEEE /* COTbcLevelView.m */; };
 		1D1A19B8164B29600081FEEE /* COTOptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D1A19B7164B29600081FEEE /* COTOptionView.m */; };
 		1D4D785E162E470700628BFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D4D785D162E470700628BFD /* UIKit.framework */; };
 		1D4D7860162E470800628BFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D4D785F162E470700628BFD /* Foundation.framework */; };
@@ -34,12 +33,16 @@
 		1DDE92EE1648B66900ECEE38 /* box.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DDE92ED1648B66900ECEE38 /* box.png */; };
 		1DDE92F51648BEB700ECEE38 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DDE92F41648BEB700ECEE38 /* background.png */; };
 		1DE984A2164DCAA900B4FEFE /* COTSRSView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE984A1164DCAA900B4FEFE /* COTSRSView.m */; };
-		1DE984B8164DCD8300B4FEFE /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE984AF164DCD8300B4FEFE /* FMDatabaseQueue.m */; };
-		1DE984B9164DCD8300B4FEFE /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE984B1164DCD8300B4FEFE /* FMDatabaseAdditions.m */; };
-		1DE984BA164DCD8300B4FEFE /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE984B3164DCD8300B4FEFE /* FMDatabase.m */; };
-		1DE984BB164DCD8300B4FEFE /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE984B5164DCD8300B4FEFE /* FMResultSet.m */; };
-		1DE984BC164DCD8300B4FEFE /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE984B7164DCD8300B4FEFE /* FMDatabasePool.m */; };
-		214A80CE1630858400C4C759 /* SimpleCompareVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 214A80CD1630858400C4C759 /* SimpleCompareVC.m */; };
+		1DEC184E16517A0F007F0D98 /* SimpleCompareVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEC184B16517A0F007F0D98 /* SimpleCompareVC.m */; };
+		1DEC184F16517A0F007F0D98 /* AdvancedCompareVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEC184D16517A0F007F0D98 /* AdvancedCompareVC.m */; };
+		1DEC185416517AD2007F0D98 /* COTbcLevelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEC185116517AD2007F0D98 /* COTbcLevelView.m */; };
+		1DEC185516517AD2007F0D98 /* COTacLevelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEC185316517AD2007F0D98 /* COTacLevelView.m */; };
+		1DEC186416517CE5007F0D98 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEC185B16517CE5007F0D98 /* FMDatabaseQueue.m */; };
+		1DEC186516517CE5007F0D98 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEC185D16517CE5007F0D98 /* FMDatabaseAdditions.m */; };
+		1DEC186616517CE5007F0D98 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEC185F16517CE5007F0D98 /* FMDatabase.m */; };
+		1DEC186716517CE5007F0D98 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEC186116517CE5007F0D98 /* FMResultSet.m */; };
+		1DEC186816517CE5007F0D98 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEC186316517CE5007F0D98 /* FMDatabasePool.m */; };
+		1DEC186B16518315007F0D98 /* COTALoggedInPLayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEC186A16518315007F0D98 /* COTALoggedInPLayView.m */; };
 		216AD8BE1634E8100083B92E /* DimeBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8A71634E8100083B92E /* DimeBack.png */; };
 		216AD8BF1634E8100083B92E /* DimeFront.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8A81634E8100083B92E /* DimeFront.png */; };
 		216AD8C01634E8100083B92E /* FiftyDollarBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8A91634E8100083B92E /* FiftyDollarBack.png */; };
@@ -63,8 +66,6 @@
 		216AD8D21634E8100083B92E /* TwentyDollarFront.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8BB1634E8100083B92E /* TwentyDollarFront.png */; };
 		216AD8D31634E8100083B92E /* TwoDollarBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8BC1634E8100083B92E /* TwoDollarBack.png */; };
 		216AD8D41634E8100083B92E /* TwoDollarFront.png in Resources */ = {isa = PBXBuildFile; fileRef = 216AD8BD1634E8100083B92E /* TwoDollarFront.png */; };
-		216AD8D81634E8FB0083B92E /* SimpleCompareVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 216AD8D71634E8FB0083B92E /* SimpleCompareVC2.m */; };
-		216AD8DB1634EDFA0083B92E /* SimpleCompareVC3.m in Sources */ = {isa = PBXBuildFile; fileRef = 216AD8DA1634EDFA0083B92E /* SimpleCompareVC3.m */; };
 		21ABDCA6162F904000F73DEA /* cashout_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 21ABDCA5162F904000F73DEA /* cashout_icon.png */; };
 		FAB396001635045500107796 /* COTMoneyViewerController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB395FF1635045500107796 /* COTMoneyViewerController.m */; };
 		FAB3960E1635134200107796 /* MoneyEnlarge.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB3960D1635134200107796 /* MoneyEnlarge.png */; };
@@ -77,8 +78,6 @@
 		1D03CF491645B5B5002DD7CD /* COTLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COTLoginView.m; sourceTree = "<group>"; };
 		1D1A19AC164B282D0081FEEE /* COTActivitiesChooseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COTActivitiesChooseView.h; sourceTree = "<group>"; };
 		1D1A19AD164B282D0081FEEE /* COTActivitiesChooseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COTActivitiesChooseView.m; sourceTree = "<group>"; };
-		1D1A19B3164B28F90081FEEE /* COTbcLevelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COTbcLevelView.h; sourceTree = "<group>"; };
-		1D1A19B4164B28F90081FEEE /* COTbcLevelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COTbcLevelView.m; sourceTree = "<group>"; };
 		1D1A19B6164B29600081FEEE /* COTOptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COTOptionView.h; sourceTree = "<group>"; };
 		1D1A19B7164B29600081FEEE /* COTOptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COTOptionView.m; sourceTree = "<group>"; };
 		1D4D7859162E470700628BFD /* CashOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CashOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,18 +115,26 @@
 		1DDE92F41648BEB700ECEE38 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = ../background.png; sourceTree = "<group>"; };
 		1DE984A0164DCAA900B4FEFE /* COTSRSView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COTSRSView.h; sourceTree = "<group>"; };
 		1DE984A1164DCAA900B4FEFE /* COTSRSView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COTSRSView.m; sourceTree = "<group>"; };
-		1DE984AE164DCD8300B4FEFE /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
-		1DE984AF164DCD8300B4FEFE /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
-		1DE984B0164DCD8300B4FEFE /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		1DE984B1164DCD8300B4FEFE /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		1DE984B2164DCD8300B4FEFE /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
-		1DE984B3164DCD8300B4FEFE /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
-		1DE984B4164DCD8300B4FEFE /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
-		1DE984B5164DCD8300B4FEFE /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
-		1DE984B6164DCD8300B4FEFE /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
-		1DE984B7164DCD8300B4FEFE /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
-		214A80CC1630858400C4C759 /* SimpleCompareVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleCompareVC.h; sourceTree = "<group>"; };
-		214A80CD1630858400C4C759 /* SimpleCompareVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleCompareVC.m; sourceTree = "<group>"; };
+		1DEC184A16517A0F007F0D98 /* SimpleCompareVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleCompareVC.h; sourceTree = "<group>"; };
+		1DEC184B16517A0F007F0D98 /* SimpleCompareVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleCompareVC.m; sourceTree = "<group>"; };
+		1DEC184C16517A0F007F0D98 /* AdvancedCompareVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvancedCompareVC.h; sourceTree = "<group>"; };
+		1DEC184D16517A0F007F0D98 /* AdvancedCompareVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvancedCompareVC.m; sourceTree = "<group>"; };
+		1DEC185016517AD2007F0D98 /* COTbcLevelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COTbcLevelView.h; sourceTree = "<group>"; };
+		1DEC185116517AD2007F0D98 /* COTbcLevelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COTbcLevelView.m; sourceTree = "<group>"; };
+		1DEC185216517AD2007F0D98 /* COTacLevelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COTacLevelView.h; sourceTree = "<group>"; };
+		1DEC185316517AD2007F0D98 /* COTacLevelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COTacLevelView.m; sourceTree = "<group>"; };
+		1DEC185A16517CE5007F0D98 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		1DEC185B16517CE5007F0D98 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		1DEC185C16517CE5007F0D98 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		1DEC185D16517CE5007F0D98 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		1DEC185E16517CE5007F0D98 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		1DEC185F16517CE5007F0D98 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		1DEC186016517CE5007F0D98 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		1DEC186116517CE5007F0D98 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		1DEC186216517CE5007F0D98 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		1DEC186316517CE5007F0D98 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		1DEC186916518315007F0D98 /* COTALoggedInPLayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COTALoggedInPLayView.h; sourceTree = "<group>"; };
+		1DEC186A16518315007F0D98 /* COTALoggedInPLayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COTALoggedInPLayView.m; sourceTree = "<group>"; };
 		216AD8A71634E8100083B92E /* DimeBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DimeBack.png; sourceTree = "<group>"; };
 		216AD8A81634E8100083B92E /* DimeFront.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DimeFront.png; sourceTree = "<group>"; };
 		216AD8A91634E8100083B92E /* FiftyDollarBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FiftyDollarBack.png; sourceTree = "<group>"; };
@@ -151,10 +158,6 @@
 		216AD8BB1634E8100083B92E /* TwentyDollarFront.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwentyDollarFront.png; sourceTree = "<group>"; };
 		216AD8BC1634E8100083B92E /* TwoDollarBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwoDollarBack.png; sourceTree = "<group>"; };
 		216AD8BD1634E8100083B92E /* TwoDollarFront.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwoDollarFront.png; sourceTree = "<group>"; };
-		216AD8D61634E8FB0083B92E /* SimpleCompareVC2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleCompareVC2.h; sourceTree = "<group>"; };
-		216AD8D71634E8FB0083B92E /* SimpleCompareVC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleCompareVC2.m; sourceTree = "<group>"; };
-		216AD8D91634EDFA0083B92E /* SimpleCompareVC3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleCompareVC3.h; sourceTree = "<group>"; };
-		216AD8DA1634EDFA0083B92E /* SimpleCompareVC3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleCompareVC3.m; sourceTree = "<group>"; };
 		21ABDCA5162F904000F73DEA /* cashout_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cashout_icon.png; path = ../cashout_icon.png; sourceTree = "<group>"; };
 		FAB395FE1635044E00107796 /* COTMoneyViewerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = COTMoneyViewerController.h; sourceTree = "<group>"; };
 		FAB395FF1635045500107796 /* COTMoneyViewerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COTMoneyViewerController.m; sourceTree = "<group>"; };
@@ -220,22 +223,24 @@
 				1D03CF491645B5B5002DD7CD /* COTLoginView.m */,
 				1D01ABCB16447F2E00C4A903 /* COTRegisterView.h */,
 				1D01ABCC16447F2E00C4A903 /* COTRegisterView.m */,
+				1DEC186916518315007F0D98 /* COTALoggedInPLayView.h */,
+				1DEC186A16518315007F0D98 /* COTALoggedInPLayView.m */,
 				1D1A19AC164B282D0081FEEE /* COTActivitiesChooseView.h */,
 				1D1A19AD164B282D0081FEEE /* COTActivitiesChooseView.m */,
-				1D1A19B3164B28F90081FEEE /* COTbcLevelView.h */,
-				1D1A19B4164B28F90081FEEE /* COTbcLevelView.m */,
 				1D1A19B6164B29600081FEEE /* COTOptionView.h */,
 				1D1A19B7164B29600081FEEE /* COTOptionView.m */,
 				1DE984A0164DCAA900B4FEFE /* COTSRSView.h */,
 				1DE984A1164DCAA900B4FEFE /* COTSRSView.m */,
 				1DD864DC164A04CA00C74598 /* COTAddStudentsView.h */,
 				1DD864DD164A04CA00C74598 /* COTAddStudentsView.m */,
-				214A80CC1630858400C4C759 /* SimpleCompareVC.h */,
-				214A80CD1630858400C4C759 /* SimpleCompareVC.m */,
-				216AD8D61634E8FB0083B92E /* SimpleCompareVC2.h */,
-				216AD8D71634E8FB0083B92E /* SimpleCompareVC2.m */,
-				216AD8D91634EDFA0083B92E /* SimpleCompareVC3.h */,
-				216AD8DA1634EDFA0083B92E /* SimpleCompareVC3.m */,
+				1DEC184A16517A0F007F0D98 /* SimpleCompareVC.h */,
+				1DEC184B16517A0F007F0D98 /* SimpleCompareVC.m */,
+				1DEC184C16517A0F007F0D98 /* AdvancedCompareVC.h */,
+				1DEC184D16517A0F007F0D98 /* AdvancedCompareVC.m */,
+				1DEC185016517AD2007F0D98 /* COTbcLevelView.h */,
+				1DEC185116517AD2007F0D98 /* COTbcLevelView.m */,
+				1DEC185216517AD2007F0D98 /* COTacLevelView.h */,
+				1DEC185316517AD2007F0D98 /* COTacLevelView.m */,
 				1D57C1F71635B98C00B42328 /* ImageToDrag.h */,
 				1D57C1F81635B98C00B42328 /* ImageToDrag.m */,
 				1DC137D116458A2700B26872 /* Utility.h */,
@@ -281,16 +286,16 @@
 		1DE984AC164DCD7100B4FEFE /* FMDB */ = {
 			isa = PBXGroup;
 			children = (
-				1DE984AE164DCD8300B4FEFE /* FMDatabaseQueue.h */,
-				1DE984AF164DCD8300B4FEFE /* FMDatabaseQueue.m */,
-				1DE984B0164DCD8300B4FEFE /* FMDatabaseAdditions.h */,
-				1DE984B1164DCD8300B4FEFE /* FMDatabaseAdditions.m */,
-				1DE984B2164DCD8300B4FEFE /* FMDatabase.h */,
-				1DE984B3164DCD8300B4FEFE /* FMDatabase.m */,
-				1DE984B4164DCD8300B4FEFE /* FMResultSet.h */,
-				1DE984B5164DCD8300B4FEFE /* FMResultSet.m */,
-				1DE984B6164DCD8300B4FEFE /* FMDatabasePool.h */,
-				1DE984B7164DCD8300B4FEFE /* FMDatabasePool.m */,
+				1DEC185A16517CE5007F0D98 /* FMDatabaseQueue.h */,
+				1DEC185B16517CE5007F0D98 /* FMDatabaseQueue.m */,
+				1DEC185C16517CE5007F0D98 /* FMDatabaseAdditions.h */,
+				1DEC185D16517CE5007F0D98 /* FMDatabaseAdditions.m */,
+				1DEC185E16517CE5007F0D98 /* FMDatabase.h */,
+				1DEC185F16517CE5007F0D98 /* FMDatabase.m */,
+				1DEC186016517CE5007F0D98 /* FMResultSet.h */,
+				1DEC186116517CE5007F0D98 /* FMResultSet.m */,
+				1DEC186216517CE5007F0D98 /* FMDatabasePool.h */,
+				1DEC186316517CE5007F0D98 /* FMDatabasePool.m */,
 			);
 			name = FMDB;
 			sourceTree = "<group>";
@@ -435,9 +440,6 @@
 				1D4D786A162E470800628BFD /* main.m in Sources */,
 				1D4D786E162E470800628BFD /* COTAppDelegate.m in Sources */,
 				1D4D787E162E497600628BFD /* COTHomeViewController.m in Sources */,
-				214A80CE1630858400C4C759 /* SimpleCompareVC.m in Sources */,
-				216AD8D81634E8FB0083B92E /* SimpleCompareVC2.m in Sources */,
-				216AD8DB1634EDFA0083B92E /* SimpleCompareVC3.m in Sources */,
 				FAB396001635045500107796 /* COTMoneyViewerController.m in Sources */,
 				1D57C1F91635B98C00B42328 /* ImageToDrag.m in Sources */,
 				1D01ABCD16447F2E00C4A903 /* COTRegisterView.m in Sources */,
@@ -445,14 +447,18 @@
 				1D03CF4A1645B5B5002DD7CD /* COTLoginView.m in Sources */,
 				1DD864DE164A04CA00C74598 /* COTAddStudentsView.m in Sources */,
 				1D1A19AE164B282D0081FEEE /* COTActivitiesChooseView.m in Sources */,
-				1D1A19B5164B28F90081FEEE /* COTbcLevelView.m in Sources */,
 				1D1A19B8164B29600081FEEE /* COTOptionView.m in Sources */,
 				1DE984A2164DCAA900B4FEFE /* COTSRSView.m in Sources */,
-				1DE984B8164DCD8300B4FEFE /* FMDatabaseQueue.m in Sources */,
-				1DE984B9164DCD8300B4FEFE /* FMDatabaseAdditions.m in Sources */,
-				1DE984BA164DCD8300B4FEFE /* FMDatabase.m in Sources */,
-				1DE984BB164DCD8300B4FEFE /* FMResultSet.m in Sources */,
-				1DE984BC164DCD8300B4FEFE /* FMDatabasePool.m in Sources */,
+				1DEC184E16517A0F007F0D98 /* SimpleCompareVC.m in Sources */,
+				1DEC184F16517A0F007F0D98 /* AdvancedCompareVC.m in Sources */,
+				1DEC185416517AD2007F0D98 /* COTbcLevelView.m in Sources */,
+				1DEC185516517AD2007F0D98 /* COTacLevelView.m in Sources */,
+				1DEC186416517CE5007F0D98 /* FMDatabaseQueue.m in Sources */,
+				1DEC186516517CE5007F0D98 /* FMDatabaseAdditions.m in Sources */,
+				1DEC186616517CE5007F0D98 /* FMDatabase.m in Sources */,
+				1DEC186716517CE5007F0D98 /* FMResultSet.m in Sources */,
+				1DEC186816517CE5007F0D98 /* FMDatabasePool.m in Sources */,
+				1DEC186B16518315007F0D98 /* COTALoggedInPLayView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
